@@ -7,11 +7,11 @@ export default function Header() {
       <span>
         <h1><a href="#">REACT University</a></h1>
         <ul>
-          <li><a href="#" className="app-header-link">Training</a></li>
-          <li><a href="#" className="app-header-link">Books</a></li>
-          <li><a href="#" className="app-header-link">Posts</a></li>
-          <li><a href="#" className="app-header-link">About</a></li>
-          <li><a href="#" className="app-header-register">Register</a></li>
+          <li><a href="./training" className="app-header-link">Training</a></li>
+          <li><a href="./books" className="app-header-link">Books</a></li>
+          <li><a href="./posts" className="app-header-link">Posts</a></li>
+          <li><a href="./about" className="app-header-link">About</a></li>
+          <li><a href="./register" className="app-header-register">Register</a></li>
         </ul>
       </span>
     </div>
