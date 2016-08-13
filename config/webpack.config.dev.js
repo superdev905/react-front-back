@@ -1,9 +1,9 @@
-var path = require('path');
-var autoprefixer = require('autoprefixer');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path                     = require('path');
+var autoprefixer             = require('autoprefixer');
+var webpack                  = require('webpack');
+var HtmlWebpackPlugin        = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-var paths = require('./paths');
+var paths                    = require('./paths');
 
 module.exports = {
   devtool: 'eval',
@@ -52,6 +52,11 @@ module.exports = {
         include: paths.appSrc,
         loader: 'babel',
         query: require('./babel.dev')
+      },
+      {
+        test: /\.scss$/,
+        include: [paths.appSrc, paths.appNodeModules],
+        loaders: ["style", "css", "sass"]
       },
       {
         test: /\.css$/,
