@@ -16,7 +16,7 @@ import {
 export default <Router history={ browserHistory }>
   <Route path="/"           component={ Layout }>
     <Route path="/training" component={ Training }/>
-    <Route path="/books"    component={ Books }/> 
+    <Route path="/books"    component={ Books }/>
     <Route path="/posts"    component={ Posts }/>
     <Route path="/about"    component={ About }/>
     <Route path="/register" component={ Register }/>
