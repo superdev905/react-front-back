@@ -45,9 +45,11 @@ function Description() {
       </div>
 
       <div className="home--description--info-box">
-        <section><span>Interested in learning React but don't know where to start?</span></section>
-        <section><span>Not sure how to get React to work with Redux, Webpack, or Babel?</span></section>
-        <section><span>Already know React but want to take your knowledge to the next level?</span></section>
+        <div className="home--description--info-box--content">
+          <section><span>Interested in learning React but don't know where to start?</span></section>
+          <section><span>Not sure how to get React to work with Redux, Webpack, or Babel?</span></section>
+          <section><span>Already know React but want to take your knowledge to the next level?</span></section>
+        </div>
       </div>
     </div>
   );
