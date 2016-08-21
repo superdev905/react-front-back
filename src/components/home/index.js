@@ -1,6 +1,7 @@
 import './index.scss';
 import React      from 'react';
-import Benefit1  from './assets/benefit_1.svg';
+import Benefit1   from './assets/benefit_1.svg';
+import Benefit2   from './assets/benefit_2.svg';
 
 
 export default function Home() {
@@ -49,7 +50,7 @@ function Description() {
 
       <div className="home--description--info-box">
         <div className="home--description--info-box--content">
-          <section><span>Interested in learning React but don't know where to start?</span></section>
+          <section><span>Interested in learning React but dont know where to start?</span></section>
           <section><span>Not sure how to get React to work with Redux, Webpack, or Babel?</span></section>
           <section><span>Already know React but want to take your knowledge to the next level?</span></section>
         </div>
@@ -64,10 +65,15 @@ function Benefits() {
       <div className="home--benefits--title">
         <p>BENEFITS</p>
       </div>
-      <img src={Benefit1} alt="Benefits" />
-      <div className="home--benefits--content">
+      <img src={Benefit1} alt="Benefits Human" />
+      <div className="home--benefits--paste">
         <h3>No more copy-pasting code.</h3>
-        <p>Learn React the right way from real engineers who work with React on real world business applications. Our instructors are contributors to React, authors of React books and tutorials and creators of popular open source libraries in React's ecosystem.</p>
+        <p>Learn React the right way from real engineers who work with React on real world business applications. Our instructors are contributors to React, authors of React books and tutorials and creators of popular open source libraries in Reacts ,ecosystem.</p>
+      </div>
+      <div className="home--benefits--medal">
+        <img src={Benefit2} alt="Benefits Medal" />
+        <h3>Become a true expert.</h3>
+        <p>Our teaching philsophy is especially geared to ensure you understand the material front and back. We follow "Crawl, Walk, Run": a mixture of lectures, walk-throughs and practical exercises will help reinforce these lessons. At the end of our training you will be a subject matter expert.</p>
       </div>
     </div>
   );
