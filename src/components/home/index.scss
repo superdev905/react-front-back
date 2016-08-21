@@ -97,4 +97,40 @@
       }
     }
   }
+
+  .home--benefits {
+    .home--benefits--title {
+      margin-top: 72px;
+      margin-left: 141px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: #9192B1;
+    }
+
+    img {
+      height: 155px;
+      margin: 22px 115px;
+    }
+
+    .home--benefits--content{
+      h3 {
+        font-family: Rokkitt-Regular;
+        color: #383776;
+        font-size: 1.5em;
+        font-weight: 100;
+        margin-top: 10px;
+        margin-left: 33px;
+        letter-spacing: 1.9px;
+      }
+
+      p {
+        color: #616177;
+        margin: -5px 44px;
+        letter-spacing: 0.9px;
+        line-height: 27px;
+        font-size: 0.99em;
+        font-weight: 100;
+      }
+    }
+  }
 }

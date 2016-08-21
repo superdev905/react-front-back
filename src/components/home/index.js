@@ -1,5 +1,7 @@
 import './index.scss';
-import React from 'react';
+import React      from 'react';
+import Benefit1  from './assets/benefit_1.svg';
+
 
 export default function Home() {
   return (
@@ -7,6 +9,7 @@ export default function Home() {
       <Tagline />
       <Cta />
       <Description />
+      <Benefits />
     </div>
   );
 }
@@ -50,6 +53,21 @@ function Description() {
           <section><span>Not sure how to get React to work with Redux, Webpack, or Babel?</span></section>
           <section><span>Already know React but want to take your knowledge to the next level?</span></section>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function Benefits() {
+  return (
+    <div className="home--benefits">
+      <div className="home--benefits--title">
+        <p>BENEFITS</p>
+      </div>
+      <img src={Benefit1} alt="Benefits" />
+      <div className="home--benefits--content">
+        <h3>No more copy-pasting code.</h3>
+        <p>Learn React the right way from real engineers who work with React on real world business applications. Our instructors are contributors to React, authors of React books and tutorials and creators of popular open source libraries in React's ecosystem.</p>
       </div>
     </div>
   );
