@@ -12,6 +12,7 @@ export default function Home() {
       <Cta />
       <Description />
       <Benefits />
+      <Newsletter />
     </div>
   );
 }
@@ -81,6 +82,17 @@ function Benefits() {
         <h3>Fun and engaging projects</h3>
         <p>Our training focuses on being comprehensive but also fun. No trivial "Todo" apps here. Learn to build serious applications as well as fun games such as a Star Trek or Space Invaders video game.</p>
       </div>
+    </div>
+  );
+}
+
+
+function Newsletter () {
+  return (
+    <div className="home--newsletter">
+      <h2>Accelerate your career with React.</h2>
+      <p>Get notified about future workshops</p>
+      <div className="home--newsletter--submit"></div>
     </div>
   );
 }
