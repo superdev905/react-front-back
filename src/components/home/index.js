@@ -2,6 +2,7 @@ import './index.scss';
 import React      from 'react';
 import Benefit1   from './assets/benefit_1.svg';
 import Benefit2   from './assets/benefit_2.svg';
+import Benefit3   from './assets/benefit_3.svg';
 
 
 export default function Home() {
@@ -74,6 +75,11 @@ function Benefits() {
         <img src={Benefit2} alt="Benefits Medal" />
         <h3>Become a true expert.</h3>
         <p>Our teaching philsophy is especially geared to ensure you understand the material front and back. We follow "Crawl, Walk, Run": a mixture of lectures, walk-throughs and practical exercises will help reinforce these lessons. At the end of our training you will be a subject matter expert.</p>
+      </div>
+      <div className="home--benefits--fun">
+        <img src={Benefit3} alt="Benefits Fun" />
+        <h3>Fun and engaging projects</h3>
+        <p>Our training focuses on being comprehensive but also fun. No trivial "Todo" apps here. Learn to build serious applications as well as fun games such as a Star Trek or Space Invaders video game.</p>
       </div>
     </div>
   );

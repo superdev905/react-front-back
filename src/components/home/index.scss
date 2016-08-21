@@ -157,5 +157,31 @@
         font-weight: 100;
       }
     }
+
+    .home--benefits--fun {
+      img {
+        margin-top: 72px;
+        height: 128px;
+        margin-left: 117px;
+      }
+
+      h3 {
+        font-family: Rokkitt-Regular;
+        color: #383776;
+        font-size: 1.5em;
+        font-weight: 100;
+        margin-top: 21px;
+        margin-left: 36px;
+        letter-spacing: 1.9px;
+      }
+      p {
+        color: #616177;
+        margin: -7px 66px;
+        letter-spacing: 1.1px;
+        line-height: 28px;
+        font-size: 0.99em;
+        font-weight: 100;
+      }
+    }
   }
 }
