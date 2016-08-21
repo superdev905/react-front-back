@@ -59,4 +59,17 @@
       }
     }
   }
+
+  .home--description {
+    .home--description--title {
+      color: #383776;
+      padding: 66px 70px 40px 83px;
+      font-size: 1.6em;
+      letter-spacing: 3.9px;
+      font-weight: 500;
+      p {
+        margin: 0 0 10px;
+      }
+    }
+  }
 }

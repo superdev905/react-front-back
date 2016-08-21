@@ -6,6 +6,7 @@ export default function Home() {
     <div className="home">
       <Tagline />
       <Cta />
+      <Description />
     </div>
   );
 }
@@ -29,6 +30,24 @@ function Cta() {
       </div>
       <div className="home--cta--copy">
         <p>Accelerate your career by learning from the experts. Master everything you need to <span className="blue-text">build modern JavaScript applications</span> using React, Redux, Webpack, WebSockets, WebRTC, Node and more.</p>
+      </div>
+    </div>
+  );
+}
+
+function Description() {
+  return (
+    <div className="home--description">
+
+      <div className="home--description--title">
+        <p>Stop yawning,</p>
+        <p>start building</p>
+      </div>
+
+      <div className="home--description--info-box">
+        <section><span>Interested in learning React but don't know where to start?</span></section>
+        <section><span>Not sure how to get React to work with Redux, Webpack, or Babel?</span></section>
+        <section><span>Already know React but want to take your knowledge to the next level?</span></section>
       </div>
     </div>
   );
