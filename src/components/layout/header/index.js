@@ -9,11 +9,12 @@ export default function Header() {
       <img src={RULogo} alt="React University Logo" />
       <span className="app-header--name"><a href="/">React University</a></span>
       <Menu right={true} >
-        <a href="./training" className="menu-item">Training</a>
-        <a href="./books" className="menu-item">Books</a>
-        <a href="./posts" className="menu-item">Posts</a>
-        <a href="./about" className="menu-item">About</a>
-        <a href="./register" className="menu-item">Register</a>
+        <a href="/training" className="menu-item"><i className="fa fa-code" aria-hidden="true"></i> Training</a>
+        <a href="/books" className="menu-item"><i className="fa fa-book" aria-hidden="true"></i> Books</a>
+        <a href="/posts" className="menu-item"><i className="fa fa-commenting" aria-hidden="true"></i> Posts</a>
+        <a href="/about" className="menu-item"><i className="fa fa-info-circle" aria-hidden="true"></i> About</a>
+        <a href="/register" className="menu-item"><i className="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+        <a href="/" className="menu-item"><i className="fa fa-home" aria-hidden="true"></i> Home</a>
       </Menu>
     </div>
   );
