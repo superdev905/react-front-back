@@ -45,7 +45,6 @@ function Cta() {
 function Description() {
   return (
     <div className="home--description">
-
       <div className="home--description--title">
         <p>Stop yawning,</p>
         <p>start building</p>
@@ -53,7 +52,7 @@ function Description() {
 
       <div className="home--description--info-box">
         <div className="home--description--info-box--content">
-          <section><span>Interested in learning React but dont know where to start?</span></section>
+          <section><span>Interested in learning React but don't know where to start?</span></section>
           <section><span>Not sure how to get React to work with Redux, Webpack, or Babel?</span></section>
           <section><span>Already know React but want to take your knowledge to the next level?</span></section>
         </div>
@@ -71,7 +70,7 @@ function Benefits() {
       <img src={Benefit1} alt="Benefits Human" />
       <div className="home--benefits--paste">
         <h3>No more copy-pasting code</h3>
-        <p>Learn React the right way from real engineers who work with React on real world business applications. Our instructors are contributors to React, authors of React books and tutorials and creators of popular open source libraries in Reacts ,ecosystem.</p>
+        <p>Learn React the right way from real engineers who work with React on real world business applications. Our instructors are contributors to React, authors of React books and tutorials and creators of popular open source libraries in React's ecosystem.</p>
       </div>
       <div className="home--benefits--medal">
         <img src={Benefit2} alt="Benefits Medal" />
@@ -91,7 +90,9 @@ function Benefits() {
 function Newsletter () {
   return (
     <div className="home--newsletter">
-      <h2>Accelerate your career with React</h2>
+      <div className="home--newsletter--title">
+        <h2>Accelerate your career with React</h2>
+      </div>
       <p>Get notified about future workshops</p>
       <div className="home--newsletter--submit"></div>
     </div>
@@ -101,11 +102,11 @@ function Newsletter () {
 function Footer () {
   return (
     <div className="home--footer">
-      <ul>
-        <li><a href="http://facebook.com/"><i className="fa fa-facebook-f"></i></a></li>
-        <li><a href="http://twitter.com/"><i className="fa fa-twitter"></i></a></li>
-      </ul>
-      <p>Copyright 2016 React University</p>
+      <div className="home--footer--social">
+        <a href="http://twitter.com/"><i className="fa fa-twitter"></i></a>
+        <a href="http://facebook.com/"><i className="fa fa-facebook-f"></i></a>
+      </div>
+        <p>Copyright { '\u00A9' } 2016 React University</p>
     </div>
   );
 }
