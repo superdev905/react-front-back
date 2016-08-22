@@ -222,12 +222,26 @@
       text-align: center;
     }
 
-    .home--newsletter--submit {
+    #mce-EMAIL {
       border: 1px solid #E4E9F2;
-      width: 247px;
+      width: 225px;
+      height: 34px;
+      margin-top: 24px;
+      padding-left: 8px;
+      font-size: .9em;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
+    #mc-embedded-subscribe {
+      background: #383776;
+      color: #FFFFFF;
+      border: none;
       height: 38px;
-      margin-left: 18px;
-      margin-top: 31px;
+      width: 82px;
+      font-size: 0.8em;
+      letter-spacing: 1.5px;
+      font-weight: 300;
     }
   }
 

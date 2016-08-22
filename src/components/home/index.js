@@ -101,7 +101,7 @@ function Newsletter () {
             <div style={{"position": "absolute", "left": "-5000px", "ariaHidden": true}}>
               <input type="text" name="b_b2288653d99f8d9216e217796_5079f900cd" tabIndex="-1"  />
             </div>
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn-register" />
+            <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" className="btn-register" />
           </div>
         </form>
       </div>
