@@ -13,6 +13,7 @@ export default function Home() {
       <Description />
       <Benefits />
       <Newsletter />
+      <Footer />
     </div>
   );
 }
@@ -69,12 +70,12 @@ function Benefits() {
       </div>
       <img src={Benefit1} alt="Benefits Human" />
       <div className="home--benefits--paste">
-        <h3>No more copy-pasting code.</h3>
+        <h3>No more copy-pasting code</h3>
         <p>Learn React the right way from real engineers who work with React on real world business applications. Our instructors are contributors to React, authors of React books and tutorials and creators of popular open source libraries in Reacts ,ecosystem.</p>
       </div>
       <div className="home--benefits--medal">
         <img src={Benefit2} alt="Benefits Medal" />
-        <h3>Become a true expert.</h3>
+        <h3>Become a true expert</h3>
         <p>Our teaching philsophy is especially geared to ensure you understand the material front and back. We follow "Crawl, Walk, Run": a mixture of lectures, walk-throughs and practical exercises will help reinforce these lessons. At the end of our training you will be a subject matter expert.</p>
       </div>
       <div className="home--benefits--fun">
@@ -90,9 +91,21 @@ function Benefits() {
 function Newsletter () {
   return (
     <div className="home--newsletter">
-      <h2>Accelerate your career with React.</h2>
+      <h2>Accelerate your career with React</h2>
       <p>Get notified about future workshops</p>
       <div className="home--newsletter--submit"></div>
+    </div>
+  );
+}
+
+function Footer () {
+  return (
+    <div className="home--footer">
+      <ul>
+        <li><a href="http://facebook.com/"><i className="fa fa-facebook-f"></i></a></li>
+        <li><a href="http://twitter.com/"><i className="fa fa-twitter"></i></a></li>
+      </ul>
+      <p>Copyright 2016 React University</p>
     </div>
   );
 }
