@@ -1,0 +1,93 @@
+.training {
+	.training--tagline {
+		height: 132px;
+		font-family: Rockkitt-Regular;
+		color: #383776;
+		background-color: #cbedef;
+
+		h2 {
+			font-weight: 300;
+    		letter-spacing: 3.1px;
+    		text-align: center;
+    		margin: 0;
+    		padding-top: 70px;
+		}
+	}
+
+	.training--workshop1 {
+		height: 302px;
+		background-color: #383776;
+		color: #4BD0E2;
+		text-align: center;
+		padding-top: 37px;
+
+		a {
+			color: #4BD0E2;
+			font-size: 0.8em;
+    		font-weight: 300;
+    		letter-spacing: 1.9px;
+    		text-decoration: none;
+   			padding-bottom: 4px;
+    		border-bottom: 2px solid #4BD0E2;
+		}
+
+		.training--worskshop1--date {
+			padding-top: 37px;
+		}
+		
+		.master--react--redux--1 {
+			color: #FFFFFF;
+			font-size: 1.6em;
+			font-weight: 400;
+			padding: 8px 37px;
+			letter-spacing: 0.2px;
+			margin-bottom: 5px;
+			margin-top: 22px;
+			text-align: initial;
+			line-height: 15px;
+		}
+
+		.master--react--redux {
+			color: #FFFFFF;
+			font-size: 1.6em;
+			font-weight: 400;
+			padding: 8px 37px;
+			letter-spacing: 0.7px;
+			margin-bottom: 5px;
+			text-align: initial;
+			line-height: 7px;
+
+		}
+
+		p {
+			font-weight: 300;
+    		padding-top: 8px;
+    		font-size: 0.95em;
+    		padding-right: 28px;
+    		letter-spacing: 0.6px;
+		}
+
+		.training--view {
+			text-align: center;
+      		padding-top: 20px;
+      		padding-bottom: 20px;
+      		padding-left: 35px;
+
+	     	a {
+	        margin: 0 auto;
+	        font-size: 14px;
+	        color: #FFFFFF;
+	        letter-spacing: 0.24px;
+	        line-height: 25px;
+	        background: #F2604C;
+	        width: 146px;
+	        height: 42px;
+	        padding: 13px 32px;
+	        font-weight: 500;
+	        letter-spacing: 0.5px;
+	        border: none;
+	        text-align: initial;
+			}
+		}
+	}
+}
