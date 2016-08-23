@@ -43,6 +43,11 @@ function Workshop2() {
 			<div className="training--workshop2--date">
 				<a href="www.reactuniverity.com">Sun, May 8 at 9:00 am, San Francisco</a>
 			</div>
+			<div className="training--workshop2--react"><span>React and D3</span></div>
+			<p className="training--workshop2--authors">With Swizec Teller & Freddy Rangel</p>
+			<div className="training--workshop2--view">
+     			<a>View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+     		</div>	
 		</div>
 	);
 }
