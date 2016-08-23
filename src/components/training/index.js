@@ -6,6 +6,7 @@ export default function Training() {
   	<div className="training">
   		<Tagline />
   		<Workshop1 />
+  		<Workshop2 />
   	</div>
   );
 }
@@ -34,4 +35,14 @@ function Workshop1() {
      		</div>	
 		</div>
 	)
+}
+
+function Workshop2() {
+	return (
+		<div className="training--workshop2">
+			<div className="training--workshop2--date">
+				<a href="www.reactuniverity.com">Sun, May 8 at 9:00 am, San Francisco</a>
+			</div>
+		</div>
+	);
 }

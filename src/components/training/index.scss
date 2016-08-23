@@ -69,25 +69,46 @@
 
 		.training--view {
 			text-align: center;
-      		padding-top: 20px;
+      		padding-top: 12px;
       		padding-bottom: 20px;
       		padding-left: 35px;
 
 	     	a {
-	        margin: 0 auto;
-	        font-size: 14px;
-	        color: #FFFFFF;
-	        letter-spacing: 0.24px;
-	        line-height: 25px;
-	        background: #F2604C;
-	        width: 146px;
-	        height: 42px;
-	        padding: 13px 32px;
-	        font-weight: 500;
-	        letter-spacing: 0.5px;
-	        border: none;
-	        text-align: initial;
+		        font-size: 14px;
+		        color: #FFFFFF;
+		        letter-spacing: 0.24px;
+		        line-height: 14px;
+		        background: #F2604C;
+		        width: 109px;
+		        height: 13px;
+		        padding: 13px 20px;
+		        font-weight: 500;
+		        letter-spacing: 0.5px;
+		        border: none;
+		        text-align: initial;
+		        float: left;
 			}
+
+			i {
+				padding-left: 5px;
+			}
+		}
+	}
+
+	.training--workshop2 {
+		height: 302px;
+		background-color: #4BD0E2;
+		text-align: center;
+		padding-top: 37px;
+
+		a {
+			color: #383776;
+			font-size: 0.8em;
+    		font-weight: 300;
+    		letter-spacing: 1.9px;
+    		text-decoration: none;
+   			padding-bottom: 4px;
+    		border-bottom: 2px solid #383776;
 		}
 	}
 }
