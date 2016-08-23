@@ -115,7 +115,7 @@
 			color: #FFFFFF;
 			font-size: 1.6em;
 			font-weight: 400;
-			padding: 7px 37px;
+			padding: 7px 41px;
 			letter-spacing: 0.6px;
 			margin-bottom: 5px;
 			margin-top: 22px;
@@ -126,7 +126,7 @@
 		.training--workshop2--authors {
 			font-weight: 300;
     		font-size: 0.95em;
-    		padding-right: 36px;
+    		padding-right: 29px;
     		letter-spacing: 0.6px;
     		color: #383776;
 		}
@@ -135,7 +135,7 @@
 			text-align: center;
       		padding-top: 12px;
       		padding-bottom: 20px;
-      		padding-left: 35px;
+      		padding-left: 40px;
 
 	     	a {
 		        font-size: 14px;
@@ -171,4 +171,82 @@
     	font-weight: 300;
     	font-size: 0.9em;
 	}
+
+	.training--newsletter {
+		padding: 0px 18px;
+
+	    .training--newsletter--title {
+	      padding: 0 40px;
+	      text-align: center;
+	    }
+
+	    h2 {
+	      font-size: 1.5em;
+	      color: #383776;
+	      letter-spacing: 2.1px;
+	      line-height: 32px;
+	      font-weight: 500;
+	      margin-top: 65px;
+	      margin-bottom: 24px;
+	    }
+
+	    p {
+	      font-family: Rokkitt-Bold;
+	      font-size: 1.1em;
+	      color: #83C48D;
+	      letter-spacing: 1.6px;
+	      line-height: 0px;
+	      margin-top: -5px;
+	      text-align: center;
+	    }
+
+	    #mce-EMAIL {
+	      border: 1px solid #E4E9F2;
+	      width: 235px;
+	      height: 34px;
+	      margin-top: 14px;
+	      padding-left: 8px;
+	      font-size: .9em;
+	      font-weight: 300;
+	      letter-spacing: 0.5px;
+	    }
+
+	    #mc-embedded-subscribe {
+	      background: #383776;
+	      color: #FFFFFF;
+	      border: none;
+	      height: 38px;
+	      width: 92px;
+	      font-size: 0.8em;
+	      letter-spacing: 1.5px;
+	      font-weight: 300;
+	    }
+	  }
+
+	  .training--footer {
+	    background-color: #E4E9F2;
+	    height: 105px;
+	    margin-top: 39px;
+	    color: #9192B1;
+	    padding-top: 21px;
+
+	    a {
+	      color: #9192B1;
+	      padding: 0 5px;
+	    }
+
+	    p {
+	      text-align: center;
+	      font-size: 0.8em;
+	      letter-spacing: 0.3px;
+	      font-weight: 500;
+	    }
+
+	    .training--footer--social {
+	      text-align: center;
+	      font-size: 23px;
+	    }
+	  
+	}
 }
+
