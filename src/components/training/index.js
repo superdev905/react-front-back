@@ -7,6 +7,7 @@ export default function Training() {
   		<Tagline />
   		<Workshop1 />
   		<Workshop2 />
+  		<Corporate />
   	</div>
   );
 }
@@ -48,6 +49,16 @@ function Workshop2() {
 			<div className="training--workshop2--view">
      			<a>View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
      		</div>	
+		</div>
+	);
+}
+
+function Corporate() {
+	return (
+		<div className="training--corporate">
+			<p>We also offer corporate training.</p>
+			<p>Contact <em>hello@reactuniversity.com</em></p>
+			<p>for more information.</p>
 		</div>
 	);
 }
