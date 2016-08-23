@@ -34,7 +34,7 @@ function Workshop1() {
      		<div className="master--react--redux"><span>Webpack</span></div>	
      		<p className="training--workshop--authors">With Freddy Rangel & Craig Condon</p>
      		<div className="training--view">
-     			<a>View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+     			<a href="www.reactuniversity.com">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
      		</div>	
 		</div>
 	)
@@ -49,7 +49,7 @@ function Workshop2() {
 			<div className="training--workshop2--react"><span>React and D3</span></div>
 			<p className="training--workshop2--authors">With Swizec Teller & Freddy Rangel</p>
 			<div className="training--workshop2--view">
-     			<a>View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+     			<a href="www.reactuniversity.com">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
      		</div>	
 		</div>
 	);
