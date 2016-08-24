@@ -1,11 +1,11 @@
 import React    from 'react';
 import Layout   from './components/layout';
-import Training from './components/training';
-import Books    from './components/books';
-import Posts    from './components/posts';
-import About    from './components/about';
-import Register from './components/register';
-import Home     from './components/home';
+import Training from './components/pages/training';
+import Books    from './components/pages/books';
+import Posts    from './components/pages/posts';
+import About    from './components/pages/about';
+import Register from './components/pages/register';
+import Home     from './components/pages/home';
 import {
   Router,
   Route,
