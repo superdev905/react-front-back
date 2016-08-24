@@ -12,5 +12,32 @@
 			padding-top: 70px;
 			margin: 0;
 		}
+	.books--ipad {
+		height: 299px;
+		color: #616177;
+
+		img {
+			height: 124px;
+      		display: block;
+      		margin: 46px auto 35px;
+		}
+
+		.books--ipad--desc {
+			padding: 0 38px;
+
+			p {
+				line-height: 26px;
+				font-size: 1em;
+				font-weight: 100;
+			}
+		}
+
+		hr {
+			width: 101%;
+			border-width: 1px;
+    		border-style: solid;
+   			margin-top: 62px;
+		}
+	}
 	
 }
