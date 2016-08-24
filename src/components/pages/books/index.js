@@ -1,7 +1,9 @@
 import './index.scss';
-import React    from 'react';
-import Ebook    from './assets/ebook.svg';
-import HoodBook from './assets/hood.svg';
+import React      from 'react';
+import Newsletter from 'components/common/newsletter';
+import Button     from 'components/common/button';
+import Ebook      from './assets/ebook.svg';
+import HoodBook   from './assets/hood.svg';
 
 export default function Books() {
   return (
@@ -9,6 +11,7 @@ export default function Books() {
   		<Tagline />
   		<Ipad />
   		<Hood />
+  		<Newsletter />
   	</div>
   ); 
 }
@@ -42,6 +45,11 @@ function Hood() {
 				<h2>A Beginner's Guide</h2>
 				<p>Freddy Rangel</p>
 			</div>
+			<div className="books--hood--button">
+				<Button url="/training">Purchase Book <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
+			</div>
+			<p>React is becoming the preferred JavaScript library for building web and native applications but few understand how it works under the hood. The book covers its architectural philosophy, useful React patterns and working with third-party libraries. It guides you through React by building a simple Star Trek video game</p>
+			<hr></hr>
 		</div>
 	);
 }

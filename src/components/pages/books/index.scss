@@ -49,14 +49,13 @@
 
 		.books--hood--title {
 			color: #383776;
-			letter-spacing: 0.4px;
     		font-weight: 200;
 			text-align: center;
     		line-height: 28px;
 			
 			h2 {
 				font-weight: 500;
-    			letter-spacing: 1px;
+    			letter-spacing: 1.5px;
     			font-size: 1.5em;
     			margin: 0;
     			padding-top: 0;
@@ -64,7 +63,32 @@
 
 			p {
 				color: #83C48D;
+				margin-top: 7px;
+				text-align: center;
 			}
+		}
+
+		.books--hood--button {
+			text-align: center;
+			padding-top: 34px;
+		}
+
+		p {
+			text-align: left;
+			color: #616177;
+			font-weight: 200;
+			line-height: 29px;
+			padding: 0 35px;
+			margin-top: 40px;
+			letter-spacing: 1px;
+		}
+
+		hr {
+			width: 82%;
+			border-width: 1px;
+    		border-style: solid;
+   			margin-top: 59px;
+   			color: #616177;
 		}
 	}
 	
