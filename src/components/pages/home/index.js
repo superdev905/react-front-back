@@ -4,7 +4,7 @@ import Newsletter from 'components/common/newsletter';
 import Benefit1   from './assets/benefit_1.svg';
 import Benefit2   from './assets/benefit_2.svg';
 import Benefit3   from './assets/benefit_3.svg';
-
+import Button     from 'components/common/button';
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
       <Description />
       <Benefits />
       <Newsletter />
-      <Footer />
     </div>
   );
 }
@@ -34,7 +33,7 @@ function Cta() {
   return (
     <div className="home--cta">
       <div className="home--cta--view-courses">
-        <a>View Courses <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        <Button url="/training">View Courses <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
       </div>
       <div className="home--cta--copy">
         <p>Accelerate your career by learning from the experts. Master everything you need to <span className="blue-text">build modern JavaScript applications</span> using React, Redux, Webpack, WebSockets, WebRTC, Node and more.</p>
@@ -87,14 +86,3 @@ function Benefits() {
   );
 }
 
-function Footer () {
-  return (
-    <div className="home--footer">
-      <div className="home--footer--social">
-        <a href="https://twitter.com/thereactu"><i className="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/reactuniversity"><i className="fa fa-facebook-f"></i></a>
-      </div>
-      <p>Copyright { '\u00A9' } 2016 React University</p>
-    </div>
-  );
-}
