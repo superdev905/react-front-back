@@ -24,6 +24,16 @@
 
 		.training--worskshop1--date {
 			padding-top: 37px;
+
+			a {
+				color: #4BD0E2;
+    			font-size: 0.8em;
+    			font-weight: 300;
+    			letter-spacing: 1.9px;
+    			text-decoration: none;
+    			padding-bottom: 4px;
+    			border-bottom: 2px solid #4BD0E2;
+			}
 		}
 		
 		.master--react--redux--1 {
@@ -59,10 +69,10 @@
 		}
 
 		.training--view {
-			text-align: center;
-      padding-top: 12px;
-      padding-bottom: 20px;
-      padding-left: 35px;
+			text-align: left;
+      		padding-top: 12px;
+      		padding-bottom: 20px;
+      		padding-left: 35px;
 
 			i {
 				padding-left: 5px;
