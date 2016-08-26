@@ -1,3 +1,6 @@
+@import 'bourbon';
+@import 'neat';
+
 .app-header {
   background-color: #383776;
   color: white;
@@ -29,7 +32,6 @@
   border: solid #f25e52 1px;
   padding: 9px 17px;
 }
-
 
 /* Position and sizing of burger button */
 .bm-burger-button {

@@ -3,6 +3,8 @@ var autoprefixer             = require('autoprefixer');
 var webpack                  = require('webpack');
 var HtmlWebpackPlugin        = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+var bourbonPaths             = require('node-bourbon').includePaths;
+var neatPaths                = require('bourbon-neat').includePaths;
 var paths                    = require('./paths');
 
 module.exports = {
@@ -94,6 +96,9 @@ module.exports = {
   },
   postcss: function() {
     return [autoprefixer];
+  },
+  sassLoader: {
+    includePaths: [bourbonPaths, neatPaths]
   },
   plugins: [
     new HtmlWebpackPlugin({
