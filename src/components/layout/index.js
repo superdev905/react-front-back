@@ -24,4 +24,6 @@ export default function Layout({ children }) {
   );
 }
 
-const checkForMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|Playbook|IEMobile|Opera Mini|NokiaBrowser|Silk/gi.test(navigator.userAgent);
+function checkForMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|Playbook|IEMobile|Opera Mini|NokiaBrowser|Silk/gi.test(navigator.userAgent);
+}
