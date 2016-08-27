@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 import Header from './header';
 import Footer from './footer';
 import React, {

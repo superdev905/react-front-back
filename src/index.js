@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 import { render } from 'react-dom';
 import Routes     from './routes'
 

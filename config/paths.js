@@ -54,6 +54,8 @@ if (isInCreateReactAppSource) {
     appPackageJson: resolveApp('package.json'),
     appSrc: resolveApp('src'),
     appNodeModules: resolveApp('node_modules'),
-    ownNodeModules: resolveApp('node_modules')
+    ownNodeModules: resolveApp('node_modules'),
+    sassPath: resolveApp('src/scss'),
+    bittersPath: resolveApp('src/scss/base/base')
   };
 }

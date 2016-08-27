@@ -1,8 +1,4 @@
-@import 'bourbon';
-@import 'neat';
-
 .app-header {
-  @include outer-container;
 
   background-color: #383776;
   color: white;
@@ -10,14 +6,6 @@
   letter-spacing: 0.5px;
   padding-top: 32px;
   padding-left: 30px;
-
-  .app-header--logo-container {
-    @include span-columns(6)
-  }
-
-  .app-header--navigation {
-    @include span-columns(6)
-  }
 
   img {
     width: 30px;

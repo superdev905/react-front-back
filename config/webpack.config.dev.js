@@ -1,7 +1,7 @@
 var path                     = require('path');
-var autoprefixer             = require('autoprefixer');
 var webpack                  = require('webpack');
 var HtmlWebpackPlugin        = require('html-webpack-plugin');
+var ExtractTextPlugin        = require('extract-text-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 var bourbonPaths             = require('node-bourbon').includePaths;
 var neatPaths                = require('bourbon-neat').includePaths;
@@ -58,13 +58,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        loaders: ["style", "css", "sass"]
-      },
-      {
-        test: /\.css$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        loader: 'style!css!postcss'
+        loader: ExtractTextPlugin.extract('style', ['css', 'sass'])
       },
       {
         test: /\.json$/,
@@ -94,11 +88,8 @@ module.exports = {
     configFile: path.join(__dirname, 'eslint.js'),
     useEslintrc: false
   },
-  postcss: function() {
-    return [autoprefixer];
-  },
   sassLoader: {
-    includePaths: [bourbonPaths, neatPaths]
+    includePaths: [paths.sassPath, paths.appNodeModules, bourbonPaths, neatPaths],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -109,6 +100,7 @@ module.exports = {
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
     // Note: only CSS is currently hot reloaded
     new webpack.HotModuleReplacementPlugin(),
-    new CaseSensitivePathsPlugin()
+    new CaseSensitivePathsPlugin(),
+    new ExtractTextPlugin('style.css', { disable: false, allChunks: true })
   ]
 };
