@@ -1,9 +1,11 @@
+@import 'variables';
+
 .training {
 
 	.training--tagline {
 		height: 132px;
 		font-family: Rockkitt-Regular;
-		color: #383776;
+		color: $blue-green;
 		background-color: #cbedef;
 
 		h2 {
@@ -17,7 +19,7 @@
 
 	.training--workshop1 {
 		height: 302px;
-		background-color: #383776;
+		background-color: $blue-green;
 		color: #4BD0E2;
 		text-align: center;
 		padding-top: 37px;
@@ -87,13 +89,13 @@
 		padding-top: 37px;
 
 		a {
-			color: #383776;
+			color: $blue-green;
 			font-size: 0.8em;
     		font-weight: 300;
     		letter-spacing: 1.9px;
     		text-decoration: none;
    			padding-bottom: 4px;
-    		border-bottom: 2px solid #383776;
+    		border-bottom: 2px solid $blue-green;
 		}
 
 		.training--workshop2--react {
@@ -113,7 +115,7 @@
     		font-size: 0.95em;
     		padding-right: 29px;
     		letter-spacing: 0.6px;
-    		color: #383776;
+    		color: $blue-green;
 		}
 
 		.training--workshop2--view {
@@ -147,7 +149,7 @@
 	.training--corporate {
 		height: 90px;
 		margin-top: 10px;
-		color: #383776;
+		color: $blue-green;
 		background-color: #E4E9F2;
 		text-align: center;
     	line-height: 9px;
@@ -167,7 +169,7 @@
 
 	    h2 {
 	      font-size: 1.5em;
-	      color: #383776;
+	      color: $blue-green;
 	      letter-spacing: 2.1px;
 	      line-height: 32px;
 	      font-weight: 500;
@@ -176,7 +178,7 @@
 	    }
 
 	    p {
-	      font-family: Rokkitt-Bold;
+	      font-family: $rokkitt-bold;
 	      font-size: 1.1em;
 	      color: #83C48D;
 	      letter-spacing: 1.6px;
@@ -197,7 +199,7 @@
 	    }
 
 	    #mc-embedded-subscribe {
-	      background: #383776;
+	      background: $blue-green;
 	      color: #FFFFFF;
 	      border: none;
 	      height: 38px;

@@ -1,17 +1,94 @@
+@import 'variables';
+
 .home {
+
+  .ready-to-become-expert {
+    display: none;
+    @media #{$medium-screen} {
+      display: block;
+      color: $ru-blue;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      padding: 7px 0 17px;
+    }
+  }
+
+  .home--top {
+    background-color: $blue-green;
+    @media #{$medium-screen} {
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        height: 550px;
+        width: calc(100vw);
+        background: url(./assets/react-2016-banner.svg) no-repeat center/10%;
+        background-size: 150%;
+        background-position: center top;
+      }
+    }
+    @media #{$large-screen} {
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 35%;
+        height: 549px;
+        width: calc(100vw - 26%);
+        background: url(./assets/react-2016-banner.svg) no-repeat center/10%;
+        background-size: 190%;
+        background-position: center top;
+      }
+    }
+    @media #{$x-large-screen} {
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 26%;
+        height: 550px;
+        width: calc(100vw - 26%);
+        background: url(./assets/react-2016-banner.svg) no-repeat center/10%;
+        background-size: 100%;
+        background-position: center top;
+      }
+    }
+    .row {
+      @media #{$medium-screen} {
+        max-width: 69rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      @media #{$medium-screen} {
+        .content {
+          max-width: 680px;
+          min-width: 680px;
+        }
+      }
+    }
+  }
+
   .home--tagline {
     padding: 75px 35px 0;
-    background-color: #383776;
     color: white;
     .master-react-redux {
+      font-family: $poppins;
       font-size: 37px;
       font-weight: 900;
       padding: 4px 11px;
       letter-spacing: 1.4px;
-      background-color: #52D0E1;
+      background-color: $ru-blue;
       margin-bottom: 5px;
+      @media #{$medium-screen} {
+        font-weight: 700;
+        font-size: 48px;
+        height: 67px;
+        padding-left: 18px;
+        letter-spacing: 1px;
+      }
     }
     .webpack-es6 {
+      font-family: $poppins;
       font-size: 37px;
       font-weight: 900;
       padding: 4px 11px;
@@ -22,61 +99,103 @@
         margin-top: 5px;
       }
 
+      @media #{$medium-screen} {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 48px;
+        height: 67px;
+        padding-left: 18px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .small {
+      @media #{$medium-screen} {
+        display: none;
+      }
+    }
+    .medium {
+      display: none;
+      @media #{$medium-screen} {
+        display: block;
+      }
     }
   }
 
   .home--cta {
-    background-color: #383776;
-
+    @media #{$medium-screen} {
+      padding: 0 35px;
+    }
     .home--cta--view-courses {
       text-align: center;
       padding-top: 55px;
       padding-bottom: 20px;
-
+      @media #{$medium-screen} {
+        text-align: left;
+        padding-top: 35px;
+      }
     }
     .home--cta--copy {
-      color: #FFFFFF;
+      font-family: $poppins;
+      color: $ru-blue;
       padding: 0 38px 73px;
       font-size: 1.2em;
       letter-spacing: 0.6px;
       line-height: 35px;
+      @media #{$medium-screen} {
+        padding-top: 17px;
+        padding-left: 0px;
+        font-size: 15px;
+        font-weight: 700;
+      }
 
       .blue-text {
-        color: #52D0E1;
+        color: $ru-blue;
       }
     }
   }
 
   .home--description {
-    .home--description--title {
-      color: #383776;
-      padding: 66px 70px 36px 83px;
-      font-size: 1.6em;
-      letter-spacing: 3.9px;
-      font-weight: 500;
-      max-width: 250px;
-      margin: 0 auto;
-      p {
-        margin: 0 0 10px;
+    .row {
+      @media #{$medium-screen} {
+        max-width: 69rem;
       }
     }
-
     .home--description--info-box {
       padding: 0 35px;
+      margin-top: 90px;
 
       .home--description--info-box--content {
         background-image: linear-gradient(-166deg, #E4E9F2 0%, #42C0D1 100%);
-        color: #383776;
+        color: $blue-green;
         padding: 35px 35px 0;
         text-align: center;
         font-size: 1.1em;
         letter-spacing: 1px;
         line-height: 25px;
 
+        @media #{$medium-screen} {
+          font-size: 14px;
+          padding: 15px 35px;
+          line-height: 20px;
+
+          .row {
+            display: flex;
+            align-items: center;
+          }
+        }
+
         section {
-          border-bottom: 2px solid #383776;
+          border-bottom: 2px solid $blue-green;
           padding-bottom: 38px;
           margin-bottom: 34px;
+          @media #{$medium-screen} {
+            margin: 0px;
+            padding: 18px 30px;
+            border-bottom: none;
+            border-right: 1px solid $blue-green;
+          }
 
           &:last-child {
             border: none;
@@ -90,9 +209,46 @@
   .home--benefits {
 
     padding: 0px 30px;
+    @media #{$large-screen} {
+      padding-top: 90px;
+    }
 
     h3 {
       margin-bottom: 20px;
+    }
+
+    .benefits-image-human {
+      @media #{$large-screen} {
+        padding-left: 50px;
+      }
+
+      img {
+        @media #{$large-screen} {
+          display: inline;
+          height: 350px;
+          margin: 0;
+        }
+      }
+    }
+
+    .home--benefits-medal {
+      @media #{$large-screen} {
+        padding-top: 110px;
+      }
+    }
+
+    .benefits-image-medal {
+      @media #{$large-screen} {
+        padding-right: 50px;
+      }
+
+      img {
+        @media #{$large-screen} {
+          display: inline;
+          height: 300px;
+          margin: 0;
+        }
+      }
     }
 
     .home--benefits--title {
@@ -101,6 +257,10 @@
       font-weight: 600;
       letter-spacing: 1.5px;
       color: #9192B1;
+
+      @media #{$large-screen} {
+        display: none;
+      }
     }
 
     img {
@@ -111,23 +271,34 @@
 
     .home--benefits--paste {
 
+      @media #{$medium-screen} {
+        padding-top: 67px;
+      }
 
       h3 {
-        font-family: Rokkitt-Regular;
-        color: #383776;
+        font-family: $rokkitt-regular;
+        color: $blue-green;
         font-size: 1.5em;
         font-weight: 100;
         margin-top: 10px;
         text-align: center;
         letter-spacing: 1.9px;
+        @media #{$large-screen} {
+          text-align: left;
+          margin: 0;
+        }
       }
 
       p {
+        font-family: $poppins;
         color: #616177;
         letter-spacing: 0.9px;
         line-height: 27px;
         font-size: 0.99em;
         font-weight: 100;
+        @media #{$medium-screen} {
+          margin-top: 5px;
+        }
       }
     }
 
@@ -137,16 +308,21 @@
       }
 
       h3 {
-        font-family: Rokkitt-Regular;
-        color: #383776;
+        font-family: $rokkitt-regular;
+        color: $blue-green;
         font-size: 1.5em;
         font-weight: 100;
         margin-top: -8px;
         letter-spacing: 1.9px;
         text-align: center;
+        @media #{$large-screen} {
+          text-align: left;
+          margin: 0;
+        }
       }
 
       p {
+        font-family: $poppins;
         color: #616177;
         letter-spacing: 1px;
         line-height: 28px;
@@ -156,26 +332,55 @@
     }
 
     .home--benefits--fun {
+
+      @media #{$medium-screen} {
+        padding-top: 50px;
+      }
+
       img {
         margin-top: 72px;
         height: 128px;
       }
 
       h3 {
-        font-family: Rokkitt-Regular;
-        color: #383776;
+        font-family: $rokkitt-regular;
+        color: $blue-green;
         font-size: 1.5em;
         font-weight: 100;
         margin-top: 21px;
         letter-spacing: 1.9px;
-        text-align: center
+        text-align: center;
+
+        @media #{$large-screen} {
+          text-align: left;
+          margin: 0;
+        }
       }
       p {
+        font-family: $poppins;
         color: #616177;
         letter-spacing: 1.1px;
         line-height: 28px;
         font-size: 0.99em;
         font-weight: 100;
+      }
+      .benefits-image-fun {
+        @media #{$large-screen} {
+          padding-left: 50px;
+        }
+
+        img {
+          @media #{$large-screen} {
+            display: inline;
+            height: 300px;
+            margin: 0;
+          }
+        }
+      }
+      .home--benefits--fun--text {
+          @media #{$large-screen} {
+            padding-top: 50px;
+          }
       }
     }
   }

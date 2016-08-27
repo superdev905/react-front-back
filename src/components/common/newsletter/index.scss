@@ -1,4 +1,9 @@
+@import 'variables';
 .newsletter {
+
+  @media #{$large-screen} {
+    padding-top: 94px;
+  }
 
   padding: 0px 30px;
 
@@ -9,7 +14,7 @@
 
   h2 {
     font-size: 1.5em;
-    color: #383776;
+    color: $blue-green;
     letter-spacing: 2.45px;
     line-height: 32px;
     font-weight: 500;
@@ -18,38 +23,56 @@
   }
 
   p {
-    font-family: Rokkitt-Bold;
+    font-family: $rokkitt-bold;
     font-size: 1.1em;
     color: #83C48D;
     letter-spacing: 1.6px;
-    line-height: 0px;
+    line-height: 20px;
     margin-top: -5px;
     text-align: center;
   }
 
   #mc_embed_signup {
     text-align: center;
+    @media #{$large-screen} {
+      padding-top: 5px;
+    }
   }
 
   #mce-EMAIL {
     border: 1px solid #E4E9F2;
-    width: 225px;
     height: 34px;
-    margin-top: 24px;
     padding-left: 4px;
     font-size: .9em;
     font-weight: 300;
     letter-spacing: 0.5px;
+    margin: 30px auto 0;
+    display: block;
+    max-width: 350px;
+
+    @media #{$large-screen} {
+      display: inline;
+      height: 38px;
+      width: 428px;
+      padding-left: 20px;
+    }
   }
 
   #mc-embedded-subscribe {
-    background: #383776;
+    background: $blue-green;
     color: #FFFFFF;
     border: none;
-    height: 38px;
     width: 82px;
     font-size: 0.8em;
     letter-spacing: 1.5px;
     font-weight: 300;
+    margin-top: 20px;
+    height: 35px;
+
+    @media #{$large-screen} {
+      transform: translateY(-2px);
+      height: 37px;
+    }
   }
+
 }
