@@ -1,9 +1,15 @@
+@import 'variables';
+
 .footer {
   background-color: #E4E9F2;
   height: 105px;
   margin-top: 39px;
   color: #9192B1;
   padding-top: 21px;
+
+  @media #{$medium-screen} {
+    padding-top: 45px;
+  }
 
   a {
     color: #9192B1;
@@ -17,7 +23,7 @@
     font-weight: 500;
   }
 
-  .home--footer--social {
+  .footer--social {
     text-align: center;
     font-size: 23px;
   }

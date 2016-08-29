@@ -1,7 +1,9 @@
+@import 'variables';
+
 .register {	
 	.register--workshop1 {
 		height: 302px;
-		background-color: #383776;
+		background-color: $blue-green;
 		color: #4BD0E2;
 		text-align: center;
 		padding-top: 37px;

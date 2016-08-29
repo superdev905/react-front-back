@@ -1,11 +1,15 @@
+@import 'variables';
 .app-header {
 
-  background-color: #383776;
+  background-color: $blue-green;
   color: white;
-  font-family: Rokkitt-Bold, Helvetica, sans-serif;
+  font-family: $rokkitt-bold;
   letter-spacing: 0.5px;
   padding-top: 32px;
   padding-left: 30px;
+  @media #{$large-screen} {
+    padding-top: 25px;
+  }
 
   img {
     width: 30px;
@@ -24,6 +28,38 @@
     text-decoration: none;
     color: white;
   }
+  .row {
+    @media #{$large-screen} {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .app-header--navigation {
+    display: none;
+    @media #{$large-screen} {
+      display: block;
+      font-weight: 600;
+      text-align: right;
+      padding-right: 35px;
+      letter-spacing: 1.1px;
+      font-size: 14px;
+    }
+  }
+
+  .non-register a {
+    @media #{$large-screen} {
+      margin-left: 27px;
+    }
+  }
+
+  .register {
+    @media #{$large-screen} {
+      border: 1px solid red;
+      padding: 9px 17px;
+      margin-left: 25px;
+    }
+  }
 }
 
 .app-header-register {
@@ -33,6 +69,9 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
+  @media #{$large-screen} {
+    display: none;
+  }
   position: fixed;
   width: 37px;
   height: 28px;
