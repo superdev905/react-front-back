@@ -1,7 +1,6 @@
 var path                     = require('path');
 var webpack                  = require('webpack');
 var HtmlWebpackPlugin        = require('html-webpack-plugin');
-var ExtractTextPlugin        = require('extract-text-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 var bourbonPaths             = require('node-bourbon').includePaths;
 var neatPaths                = require('bourbon-neat').includePaths;
@@ -58,7 +57,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', ['css', 'sass'])
+        loaders: ['style', 'css', 'sass']
       },
       {
         test: /\.json$/,
@@ -81,6 +80,10 @@ module.exports = {
           limit: 10000,
           name: 'static/media/[name].[ext]'
         }
+      },
+      {
+        test: /\.md$/,
+        loader: 'raw'
       }
     ]
   },
@@ -101,6 +104,5 @@ module.exports = {
     // Note: only CSS is currently hot reloaded
     new webpack.HotModuleReplacementPlugin(),
     new CaseSensitivePathsPlugin(),
-    new ExtractTextPlugin('style.css', { disable: false, allChunks: true })
   ]
 };
