@@ -5,20 +5,21 @@
   color: white;
   font-family: $rokkitt-bold;
   letter-spacing: 0.5px;
-  padding-top: 32px;
-  padding-left: 30px;
-  @media #{$large-screen} {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   img {
     width: 30px;
   }
 
+  .app-header--logo-container {
+    display: flex;
+    align-items: center;
+  }
+
   .app-header--name {
     font-size: 19px;
-    display: inline-block;
+    display: inline;
     vertical-align: top;
     margin: 3px 0 0 3px;
     font-weight: bold;
@@ -112,6 +113,9 @@
   }
 }
 
+.bm-menu-wrap {
+  z-index: 3;
+}
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
