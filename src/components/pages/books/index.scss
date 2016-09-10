@@ -1,27 +1,30 @@
+@import 'variables';
+
 .books {
-	.books--tagline {
-		height: 132px;
-		font-family: Rockkitt-Regular;
-		color: #383776;
-		background-color: #cbedef;
-		text-align: center;
-	
-		h2 {
-			font-weight: 100;
-			letter-spacing: 1px;
-			padding-top: 70px;
-			margin: 0;
-		}
-	}
-		
+  .books--tagline {
+    height: 132px;
+    color: #383776;
+    background-color: #cbedef;
+    text-align: center;
+
+    h2 {
+      font-family: $rokkitt-regular;
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      transform: translateY(12px);
+    }
+  }
+
 	.books--ipad {
 		height: 299px;
 		color: #616177;
 
 		img {
-			height: 124px;
-      		display: block;
-      		margin: 46px auto 35px;
+      height: 124px;
+      display: block;
+      margin: 46px auto 35px;
 		}
 
 		.books--ipad--desc {
@@ -37,8 +40,8 @@
 		hr {
 			width: 101%;
 			border-width: 1px;
-    		border-style: solid;
-   			margin-top: 62px;
+      border-style: solid;
+      margin-top: 62px;
 		}
 	}
 
@@ -51,16 +54,16 @@
 
 		.books--hood--title {
 			color: #383776;
-    		font-weight: 200;
+      font-weight: 200;
 			text-align: center;
-    		line-height: 28px;
+      line-height: 28px;
 		
 			h2 {
 				font-weight: 500;
-    			letter-spacing: 1.5px;
-    			font-size: 1.5em;
-    			margin: 0;
-    			padding-top: 0;
+        letter-spacing: 1.5px;
+        font-size: 1.5em;
+        margin: 0;
+        padding-top: 0;
 			}
 
 			p {
@@ -88,9 +91,9 @@
 		hr {
 			width: 82%;
 			border-width: 1px;
-    		border-style: solid;
-   			margin-top: 59px;
-   			color: #616177;
+      border-style: solid;
+      margin-top: 59px;
+      color: #616177;
 		}
 	}
 
@@ -104,7 +107,7 @@
 		.books--d3--title {
 			margin-top: 39px;
 			text-align: center;
-			color: #383776; 
+			color: #383776;
 			line-height: 10px;
 
 			h2 {
