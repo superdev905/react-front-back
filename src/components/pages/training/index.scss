@@ -5,11 +5,14 @@
   .training--tagline {
     height: 113px;
     color: $blue-green;
-    background-color: #cbedef;
+    background-color: $pale-robins-egg;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    @media #{$medium-screen} {
+      height: 140px;
+    }
 
     h2 {
       font-family: $rokkitt-regular;
@@ -19,19 +22,31 @@
       letter-spacing: 0.6px;
       transform: translateY(12px);
       margin: 0;
+      @media #{$medium-screen} {
+        letter-spacing: 1.9px;
+        transform: translateY(7px);
+        font-size: 31px;
+      }
     }
   }
 
-	.training--workshop1 {
-		height: 341px;
-		background-color: $blue-green;
-		color: #4BD0E2;
-		text-align: center;
+  .training--workshop1 {
+    height: 341px;
+    background-color: $pale-robins-egg;
+    color: #4BD0E2;
+    text-align: center;
 
-		.training--workshop1--container {
-			display: inline-block;
-			margin: 0 auto;
-		}
+    .training-wrapper {
+      background-color: $blue-green;
+      @media #{$medium-screen} {
+        height: 348px;
+      }
+    }
+
+    .training--workshop1--container {
+      display: inline-block;
+      margin: 0 auto;
+    }
 
 		.training--workshop1--date {
 			padding-top: 36px;
@@ -93,9 +108,19 @@
 
 	.training--workshop2 {
 		height: 242px;
-		background-color: #4BD0E2;
+		background-color: $pale-robins-egg;
 		text-align: center;
 		padding-top: 37px;
+    @media #{$medium-screen} {
+      padding-top: 0px;
+    }
+
+    .training-wrapper {
+      background-color: $sky-blue;
+      @media #{$medium-screen} {
+        height: 348px;
+      }
+    }
 
 		.training--workshop2--container {
 			display: inline-block;
@@ -134,25 +159,30 @@
 
 		.training--workshop2--view {
 			text-align: center;
-      		padding-top: 12px;
-      		padding-bottom: 20px;
-      		padding-left: 2px;
+      padding-top: 12px;
+      padding-bottom: 20px;
+      padding-left: 2px;
 
-	     	a {
-		        font-size: 14px;
-		        letter-spacing: 0.24px;
-		        line-height: 14px;
-		        background: #F2604C;
-		        padding: 13px 20px;
-		        font-weight: 500;
-		        letter-spacing: 0.5px;
-		        border: none;
-		        text-align: initial;
-		        float: left;
-			}
+      a {
+        font-size: 14px;
+        letter-spacing: 0.24px;
+        line-height: 14px;
+        background: #F2604C;
+        padding: 13px 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        border: none;
+        text-align: initial;
+        float: left;
 
-		}
-	}
+      }
+        &:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+    }
+  }
 
 	.training--corporate {
 		height: 99px;
