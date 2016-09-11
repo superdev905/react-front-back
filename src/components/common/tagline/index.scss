@@ -1,0 +1,29 @@
+@import 'variables';
+
+.tagline {
+  height: 113px;
+  color: $blue-green;
+  background-color: $pale-robins-egg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media #{$medium-screen} {
+    height: 140px;
+  }
+
+  h2 {
+    font-family: $rokkitt-regular;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    transform: translateY(12px);
+    margin: 0;
+    @media #{$medium-screen} {
+      letter-spacing: 1.9px;
+      transform: translateY(7px);
+      font-size: 31px;
+    }
+  }
+}

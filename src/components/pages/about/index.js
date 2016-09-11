@@ -1,5 +1,8 @@
-import React from 'react';
+import React   from 'react';
+import Tagline from 'components/common/tagline';
 
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <Tagline title="About"/>
+  );
 }

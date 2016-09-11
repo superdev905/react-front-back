@@ -1,35 +1,6 @@
 @import 'variables';
 
 .training {
-
-  .training--tagline {
-    height: 113px;
-    color: $blue-green;
-    background-color: $pale-robins-egg;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media #{$medium-screen} {
-      height: 140px;
-    }
-
-    h2 {
-      font-family: $rokkitt-regular;
-      text-align: center;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: 0.6px;
-      transform: translateY(12px);
-      margin: 0;
-      @media #{$medium-screen} {
-        letter-spacing: 1.9px;
-        transform: translateY(7px);
-        font-size: 31px;
-      }
-    }
-  }
-
   .training--workshop1 {
     height: 341px;
     background-color: $blue-green;
@@ -52,18 +23,17 @@
       display: inline-block;
       margin: 0 auto;
     }
-
 		.training--workshop1--date {
 			padding-top: 36px;
 
 			a {
-        		color: #4BD0E2;
-        		font-size: 0.8em;
-        		font-weight: 300;
-        		letter-spacing: 1.9px;
-        		text-decoration: none;
-        		padding-bottom: 4px;
-        		border-bottom: 2px solid #4BD0E2;
+        color: #4BD0E2;
+        font-size: 0.8em;
+        font-weight: 300;
+        letter-spacing: 1.9px;
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #4BD0E2;
 			}
 		}
 		

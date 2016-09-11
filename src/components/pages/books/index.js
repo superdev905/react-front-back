@@ -2,6 +2,7 @@ import './index.scss';
 import React      from 'react';
 import Newsletter from 'components/common/newsletter';
 import Button     from 'components/common/button';
+import Tagline    from 'components/common/tagline';
 import Ebook      from './assets/ebook.svg';
 import Cover      from './assets/d3.svg';
 import HoodBook   from './assets/hood.svg';
@@ -9,21 +10,13 @@ import HoodBook   from './assets/hood.svg';
 export default function Books() {
   return (
   	<div className="books">
-  		<Tagline />
+  		<Tagline title="Books"/>
   		<Ipad />
   		<Hood />
   		<D3 />
   		<Newsletter />
   	</div>
   ); 
-}
-
-function Tagline() {
-  return (
-    <div className="books--tagline">
-      <h2>Books</h2>
-    </div>
-  );
 }
 
 function Ipad() {

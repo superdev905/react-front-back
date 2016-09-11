@@ -3,14 +3,13 @@ import React                from 'react';
 import { getPostFileNames } from 'utils';
 import { startCase }        from 'lodash';
 import { Link }             from 'react-router';
+import Tagline              from 'components/common/tagline';
 
 export default function Posts() {
   const posts = generatePostListings();
   return (
     <div className="posts">
-      <div className="posts--tagline">
-        <h2>Posts</h2>
-      </div>
+      <Tagline title="Posts"/>
       <div className="posts--post-listings row">
         <div className="medium-6 medium-offset-3 columns">
           { posts }

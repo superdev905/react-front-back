@@ -3,23 +3,16 @@ import React      from 'react';
 import { Link }   from 'react-router';
 import Newsletter from 'components/common/newsletter';
 import Button     from 'components/common/button';
+import Tagline    from 'components/common/tagline';
 
 export default function Training() {
   return (
     <div className="training">
-      <Tagline />
+      <Tagline title="Available Workshops"/>
       <Workshop1 />
       <Workshop2 />
       <Corporate />
       <Newsletter />
-    </div>
-  );
-}
-
-function Tagline() {
-  return (
-    <div className="training--tagline">
-      <h2>Available Workshops</h2>
     </div>
   );
 }
