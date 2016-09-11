@@ -23,23 +23,27 @@
   }
 
 	.training--workshop1 {
-		height: 302px;
+		height: 341px;
 		background-color: $blue-green;
 		color: #4BD0E2;
 		text-align: center;
-		padding-top: 37px;
 
-		.training--worskshop1--date {
-			padding-top: 37px;
+		.training--workshop1--container {
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		.training--workshop1--date {
+			padding-top: 36px;
 
 			a {
-        color: #4BD0E2;
-        font-size: 0.8em;
-        font-weight: 300;
-        letter-spacing: 1.9px;
-        text-decoration: none;
-        padding-bottom: 4px;
-        border-bottom: 2px solid #4BD0E2;
+        		color: #4BD0E2;
+        		font-size: 0.8em;
+        		font-weight: 300;
+        		letter-spacing: 1.9px;
+        		text-decoration: none;
+        		padding-bottom: 4px;
+        		border-bottom: 2px solid #4BD0E2;
 			}
 		}
 		
@@ -47,7 +51,7 @@
 			color: #FFFFFF;
 			font-size: 1.6em;
 			font-weight: 400;
-			padding: 8px 37px;
+			padding: 8px 2px;
 			letter-spacing: 0.2px;
 			margin-bottom: 5px;
 			margin-top: 22px;
@@ -59,7 +63,7 @@
 			color: #FFFFFF;
 			font-size: 1.6em;
 			font-weight: 400;
-			padding: 8px 37px;
+			padding: 8px 2px;
 			letter-spacing: 0.7px;
 			margin-bottom: 5px;
 			text-align: initial;
@@ -79,7 +83,7 @@
 			text-align: left;
       		padding-top: 12px;
       		padding-bottom: 20px;
-      		padding-left: 35px;
+      		padding-left: 2px;
 
 			i {
 				padding-left: 5px;
@@ -88,12 +92,17 @@
 	}
 
 	.training--workshop2 {
-		height: 206px;
+		height: 242px;
 		background-color: #4BD0E2;
 		text-align: center;
 		padding-top: 37px;
 
-		a {
+		.training--workshop2--container {
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		.training--workshop2--date a {
 			color: $blue-green;
 			font-size: 0.8em;
     		font-weight: 300;
@@ -107,7 +116,7 @@
 			color: #FFFFFF;
 			font-size: 1.6em;
 			font-weight: 400;
-			padding: 7px 41px;
+			padding: 7px 2px;
 			letter-spacing: 0.6px;
 			margin-bottom: 5px;
 			margin-top: 22px;
@@ -127,16 +136,13 @@
 			text-align: center;
       		padding-top: 12px;
       		padding-bottom: 20px;
-      		padding-left: 40px;
+      		padding-left: 2px;
 
 	     	a {
 		        font-size: 14px;
-		        color: #FFFFFF;
 		        letter-spacing: 0.24px;
 		        line-height: 14px;
 		        background: #F2604C;
-		        width: 109px;
-		        height: 13px;
 		        padding: 13px 20px;
 		        font-weight: 500;
 		        letter-spacing: 0.5px;
@@ -145,15 +151,12 @@
 		        float: left;
 			}
 
-			i {
-				padding-left: 5px;
-			}
 		}
 	}
 
 	.training--corporate {
-		height: 90px;
-		margin-top: 10px;
+		height: 99px;
+		margin-top: 12px;
 		color: $blue-green;
 		background-color: #E4E9F2;
 		text-align: center;
@@ -162,13 +165,18 @@
     	letter-spacing: 0.9px;
     	font-weight: 300;
     	font-size: 0.9em;
+
+    	p {
+    		line-height: 1.9;
+    		margin-bottom: 0;
+    	}
 	}
 
 	.training--newsletter {
 		padding: 0px 18px;
 
 	    .training--newsletter--title {
-	      padding: 0 40px;
+	      padding: 0 38px;
 	      text-align: center;
 	    }
 
