@@ -1,22 +1,25 @@
-import React      from 'react';
-import Layout     from 'components/layout';
-import Training   from 'components/pages/training';
-import Books      from 'components/pages/books';
-import About      from 'components/pages/about';
-import Register   from 'components/pages/register';
-import Home       from 'components/pages/home';
-import React2016  from 'components/pages/training/react-2016';
-import ReactAndD3 from 'components/pages/training/react-and-d3';
-import PostRoutes from './post-routes';
-
+import React         from 'react';
+import { useScroll } from 'react-router-scroll';
+import Layout        from 'components/layout';
+import Training      from 'components/pages/training';
+import Books         from 'components/pages/books';
+import About         from 'components/pages/about';
+import Register      from 'components/pages/register';
+import Home          from 'components/pages/home';
+import React2016     from 'components/pages/training/react-2016';
+import ReactAndD3    from 'components/pages/training/react-and-d3';
+import PostRoutes    from './post-routes';
 import {
   Router,
   Route,
   IndexRoute,
-  browserHistory
+  browserHistory,
+  applyRouterMiddleware
 } from 'react-router';
 
-export default <Router history={ browserHistory }>
+
+
+export default <Router history={ browserHistory} render={ applyRouterMiddleware(useScroll()) }>
   <Route path="/" component={ Layout }>
     <IndexRoute component={ Home } />
     <Route path="/books" component={ Books }/>
