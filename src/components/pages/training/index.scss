@@ -32,9 +32,14 @@
 
   .training--workshop1 {
     height: 341px;
-    background-color: $pale-robins-egg;
+    background-color: $blue-green;
     color: #4BD0E2;
     text-align: center;
+    padding: 0px;
+    @media #{$medium-screen} {
+      height: 348px;
+      background-color: $white;
+    }
 
     .training-wrapper {
       background-color: $blue-green;
@@ -108,11 +113,13 @@
 
 	.training--workshop2 {
 		height: 242px;
-		background-color: $pale-robins-egg;
+		background-color: $sky-blue;
 		text-align: center;
-		padding-top: 37px;
+    padding: 37px 0 0 0;
     @media #{$medium-screen} {
       padding-top: 0px;
+      height: 348px;
+      background-color: $white;
     }
 
     .training-wrapper {
@@ -184,22 +191,29 @@
     }
   }
 
-	.training--corporate {
-		height: 99px;
-		margin-top: 12px;
-		color: $blue-green;
-		background-color: #E4E9F2;
-		text-align: center;
-    	line-height: 9px;
-    	padding-top: 10px;
-    	letter-spacing: 0.9px;
-    	font-weight: 300;
-    	font-size: 0.9em;
+  .training--corporate {
+    height: 99px;
+    margin-top: 12px;
+    color: $blue-green;
+    background-color: $white;
+    text-align: center;
+    line-height: 9px;
+    padding-top: 10px;
+    letter-spacing: 0.9px;
+    font-weight: 300;
+    font-size: 0.9em;
+    padding-left: 0;
+    padding-right: 0;
 
-    	p {
-    		line-height: 1.9;
-    		margin-bottom: 0;
-    	}
+
+    p {
+      line-height: 1.9;
+      margin-bottom: 0;
+    }
+
+    .training-wrapper {
+      background-color: $overcast-blue;
+    }
 	}
 
 	.training--newsletter {

@@ -26,8 +26,8 @@ function Tagline() {
 
 function Workshop1() {
 	return (
-		<div className="training--workshop1">
-      <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
+		<div className="training--workshop1 columns">
+      <div className="training-wrapper small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
         <div className="training--workshop1--container">
           <div className="training--workshop1--date">
             <Link to="/training/react-2016">Sat, April 23 at 9:00 am, San Francisco</Link>
@@ -48,7 +48,7 @@ function Workshop1() {
 
 function Workshop2() {
   return (
-    <div className="training--workshop2">
+    <div className="training--workshop2 columns">
       <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
         <div className="training--workshop2--container">
           <div className="training--workshop2--date">
@@ -66,11 +66,13 @@ function Workshop2() {
 }
 
 function Corporate() {
-	return (
-		<div className="training--corporate">
-			<p>We also offer corporate training.</p>
-			<p>Contact <em>hello@reactuniversity.com</em></p>
-			<p>for more information.</p>
-		</div>
-	);
+  return (
+    <div className="training--corporate columns">
+      <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
+        <p>We also offer corporate training.</p>
+        <p>Contact <a href="mailto:hello@reactuniversity.com">hello@reactuniversity.com</a></p>
+        <p>for more information.</p>
+      </div>
+    </div>
+  );
 }
