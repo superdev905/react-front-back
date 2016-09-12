@@ -3,6 +3,10 @@ import Tagline from 'components/common/tagline';
 
 export default function About() {
   return (
-    <Tagline title="About"/>
+    <div className="about">
+      <Tagline title="About"/>
+      <div className="site-content">
+      </div>
+    </div>
   );
 }

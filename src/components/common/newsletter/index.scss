@@ -2,10 +2,10 @@
 .newsletter {
 
   @media #{$large-screen} {
-    padding-top: 94px;
+    padding: 94px 0 45px;
   }
 
-  padding: 0px 30px;
+  padding: 0px 30px 45px;
 
   .home--newsletter--title {
     padding: 0 40px;

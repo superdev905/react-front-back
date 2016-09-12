@@ -10,7 +10,7 @@ export default function Posts() {
   return (
     <div className="posts">
       <Tagline title="Posts"/>
-      <div className="posts--post-listings row">
+      <div className="site-content posts--post-listings row">
         <div className="medium-6 medium-offset-3 columns">
           { posts }
         </div>

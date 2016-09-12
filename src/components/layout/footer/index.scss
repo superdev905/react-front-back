@@ -2,13 +2,12 @@
 
 .footer {
   background-color: #E4E9F2;
-  height: 105px;
-  margin-top: 39px;
+  height: $footer-height;
   color: #9192B1;
-  padding-top: 21px;
-
+  padding-top: 25px;
   @media #{$medium-screen} {
-    padding-top: 45px;
+    line-height: $footer-height;
+    padding-top: 0;
   }
 
   a {
@@ -26,5 +25,12 @@
   .footer--social {
     text-align: center;
     font-size: 23px;
+  }
+
+  .footer--copyright {
+    margin-bottom: 0;
+    @media #{$medium-screen} {
+      line-height: $footer-height;
+    }
   }
 }

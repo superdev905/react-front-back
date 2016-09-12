@@ -11,10 +11,12 @@ export default function Books() {
   return (
   	<div className="books">
   		<Tagline title="Books"/>
-  		<Ipad />
-  		<Hood />
-  		<D3 />
-  		<Newsletter />
+      <div className="site-content">
+        <Ipad />
+        <Hood />
+        <D3 />
+        <Newsletter />
+      </div>
   	</div>
   ); 
 }

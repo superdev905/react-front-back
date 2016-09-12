@@ -5,3 +5,10 @@ body {
   padding: 0;
   font-family: $rokkitt-bold;
 }
+
+.site-content {
+  min-height: calc(100vh - 300px);
+  @media #{$medium-screen} {
+    min-height: calc(100vh - 325px);
+  }
+}
