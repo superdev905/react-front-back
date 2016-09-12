@@ -56,7 +56,7 @@ function Hood() {
         building a simple Star Trek video game
         </p>
         <div className="books--hood--button">
-          <Button url="/training">
+          <Button external={ true } url="https://leanpub.com/reactunderthehood">
             Purchase Book <i className="fa fa-long-arrow-right" aria-hidden="true"/>
           </Button>
         </div>
@@ -86,7 +86,7 @@ function D3() {
         JavaScript standards in about an hour.
         </p>
         <div className="books--d3--button">
-          <Button url="/training">
+          <Button external={ true } url="https://leanpub.com/reactd3jses6">
             Purchase Book <i className="fa fa-long-arrow-right" aria-hidden="true"/>
           </Button>
         </div>
