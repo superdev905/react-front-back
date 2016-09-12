@@ -1,0 +1,23 @@
+@import 'variables';
+
+.about {
+  .row {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  h3 {
+    color: $blue-green;
+    font-family: $rokkitt-regular;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
+  p {
+    line-height: 26px;
+    font-size: 1em;
+    font-weight: 100;
+  }
+}
