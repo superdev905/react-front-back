@@ -24,10 +24,10 @@ export default function Books() {
 function Ipad() {
   return (
     <div className="books--ipad row">
-      <div className="books--book-image-wrapper columns">
+      <div className="books--book-image-wrapper large-6 large-push-7 columns">
         <img src={ Ebook } alt="Ebook" />
       </div>
-      <div className="books--ipad--desc columns">
+      <div className="books--ipad--desc large-6 large-pull-5 columns">
         <p>
         These books are great additions to our in-person training. Some are
         available for free to attendees of our workshops.
@@ -41,10 +41,10 @@ function Ipad() {
 function Hood() {
   return (
     <div className="books--hood row">
-      <div className="books--book-image-wrapper columns">
+      <div className="books--book-image-wrapper large-6 columns">
         <img src={ HoodBook } alt="React Under the Hood Book" />
       </div>
-      <div className="books--hood--title columns">
+      <div className="books--hood--title large-6 columns">
         <h2>React Under the Hood:</h2>
         <h2>A Beginner's Guide</h2>
         <p className="books--author">Freddy Rangel</p>
@@ -69,10 +69,10 @@ function Hood() {
 function D3() {
   return (
     <div className="books--d3 row">
-      <div className="books--book-image-wrapper columns">
+      <div className="books--book-image-wrapper large-6 large-push-7 columns">
         <img src={Cover} alt="D3 Book Cover" />
       </div>
-      <div className="books--d3--title columns">
+      <div className="books--d3--title large-5 large-pull-6 columns">
         <h2>React + d3js ES6:</h2>
         <h2>Reusable dataviz &</h2>
         <h2>games using modern</h2>
