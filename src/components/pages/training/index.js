@@ -4,8 +4,6 @@ import { Link }   from 'react-router';
 import Newsletter from 'components/common/newsletter';
 import Button     from 'components/common/button';
 import Tagline    from 'components/common/tagline';
-import Man        from 'components/pages/training/assets/react-2016-banner.svg';
-
 
 export default function Training() {
   return (
@@ -23,22 +21,17 @@ function Workshop1() {
 	return (
 		<div className="training--workshop1 row">
       <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
-        <div className="row">
-          <div className="training--workshop1--container medium-6 columns">
-            <div className="training--workshop1--date">
-              <Link to="/training/react-2016">Sat, April 23 at 9:00 am, San Francisco</Link>
-            </div>
-            <div className="master--react--redux--1"><span>React 2016:</span></div>
-            <div className="master--react--redux"><span>Master React, Redux,</span></div>
-            <div className="master--react--redux"><span>Immutable.js and</span></div>
-            <div className="master--react--redux"><span>Webpack</span></div>
-            <p className="training--workshop--authors">With Freddy Rangel & Craig Condon</p>
-            <div className="training--view">
-              <Button url="/training/react-2016">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
-            </div>
+        <div className="training--workshop1--container">
+          <div className="training--workshop1--date">
+            <Link to="/training/react-2016">Sat, April 23 at 9:00 am, San Francisco</Link>
           </div>
-          <div className="training--man medium-6 columns">
-            <img src={ Man } alt="Space Man"/>
+          <div className="master--react--redux--1"><span>React 2016:</span></div>
+          <div className="master--react--redux"><span>Master React, Redux,</span></div>
+          <div className="master--react--redux"><span>Immutable.js and</span></div>
+          <div className="master--react--redux"><span>Webpack</span></div>
+          <p className="training--workshop--authors">With Freddy Rangel & Craig Condon</p>
+          <div className="training--view">
+            <Button url="/training/react-2016">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
           </div>
         </div>
       </div>

@@ -14,10 +14,23 @@
 
     .training-wrapper {
       background-color: $blue-green;
-      @media #{$medium-screen} {
+      @media #{$large-screen} {
         height: 318px;
         border-radius: 9px;
         text-align: left;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          width: 844px;
+          height: 318px;
+          background-image: url('assets/react-2016-banner.svg');
+          background-position: left top;
+          background-repeat: no-repeat;
+          background-size: 111%;
+          width: 66%;
+          transform: translateX(59px);
+        }
       }
  
     }
