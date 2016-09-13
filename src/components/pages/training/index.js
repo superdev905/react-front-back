@@ -64,8 +64,8 @@ function Corporate() {
   return (
     <div className="training--corporate row">
       <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
-        <p>We also offer corporate training.</p>
-        <p>Contact <a href="mailto:hello@reactuniversity.com">hello@reactuniversity.com</a></p>
+        <p>We also offer corporate training. </p>
+        <p>Contact <a href="mailto:hello@reactuniversity.com">hello@reactuniversity.com </a></p>
         <p>for more information.</p>
       </div>
     </div>
