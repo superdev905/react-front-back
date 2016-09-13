@@ -265,7 +265,11 @@
     .training-wrapper {
       background-color: $overcast-blue;
       height: 85px;
+      @media #{$medium-screen} {
+      	margin-top: 20px;
+      }
     }
+
 	}
 
 	.newsletter {
