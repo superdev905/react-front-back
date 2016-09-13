@@ -16,9 +16,10 @@
       background-color: $blue-green;
       @media #{$large-screen} {
         height: 318px;
-        border-radius: 9px;
         text-align: left;
+        padding-left: 42px;
 
+	  
         &:before {
           content: " ";
           position: absolute;
@@ -35,27 +36,24 @@
  
     }
 
-    .training--workshop1 columns {
-    	@media #{medium-screen} {
-    		height: 318px;
-    	}
-    }
-
     .training--workshop1--container {
       display: inline-block;
       margin: 0 auto;
+      @media #{$medium-screen} {
+      	max-width: 500px;
+      }
     }
 		.training--workshop1--date {
 			padding-top: 36px;
 
 			a {
-        color: #4BD0E2;
-        font-size: 0.8em;
-        font-weight: 300;
-        letter-spacing: 1.9px;
-        text-decoration: none;
-        padding-bottom: 4px;
-        border-bottom: 2px solid #4BD0E2;
+		        color: #4BD0E2;
+		        font-size: 0.8em;
+		        font-weight: 300;
+		        letter-spacing: 1.9px;
+		        text-decoration: none;
+		        padding-bottom: 4px;
+		        border-bottom: 2px solid #4BD0E2;
 			}
 		}
 		
@@ -69,6 +67,12 @@
 			margin-top: 22px;
 			text-align: initial;
 			line-height: 15px;
+			@media #{$medium-screen} {
+				font-size: 1.4em;
+    			font-weight: 600;
+    			display: inline-block;
+			}
+			
 		}
 
 		.master--react--redux {
@@ -80,6 +84,11 @@
 			margin-bottom: 5px;
 			text-align: initial;
 			line-height: 7px;
+			@media #{$medium-screen} {
+				font-size: 1.4em;
+    			font-weight: 600;
+    			display: inline;
+			}
 
 		}
 
@@ -89,6 +98,9 @@
     		font-size: 0.95em;
     		padding-right: 28px;
     		letter-spacing: 0.6px;
+    		@media #{$medium-screen} {
+    			font-size: 0.7em;
+    		}
 		}
 
 		.training--view {
@@ -96,6 +108,10 @@
       		padding-top: 12px;
       		padding-bottom: 20px;
       		padding-left: 2px;
+      		@media #{$medium-screen} {
+      			padding-left: 0;
+      			padding-top: 29px;
+      		}
 
 			i {
 				padding-left: 5px;
@@ -110,7 +126,7 @@
     	padding: 37px 0 0 0;
     	@media #{$medium-screen} {
       		padding-top: 0px;
-      		height: 348px;
+      		height: 334px;
       		background-color: $white;
     	}
 
@@ -118,50 +134,73 @@
       background-color: $sky-blue;
       @media #{$medium-screen} {
         height: 316px;
-        border-radius: 9px;
+        background: linear-gradient(to right, rgba(75,208,226,1) 0%, rgba(8,4,4,1) 100%);
       }
     }
 
-		.training--workshop2--container {
-			display: inline-block;
-			margin: 0 auto;
+	.training--workshop2--container {
+		display: inline-block;
+		margin: 0 auto;
+		@media #{$medium-screen} {
+		text-align: left;
+		float: left;
+		padding-top: 46px;
+		padding-left: 30px;
 		}
 
-		.training--workshop2--date a {
-			color: $blue-green;
-			font-size: 0.8em;
-    		font-weight: 300;
-    		letter-spacing: 1.9px;
-    		text-decoration: none;
-   			padding-bottom: 4px;
-    		border-bottom: 2px solid $blue-green;
+		img {
+			display: none;
+			@media #{$medium-screen} {
+				width: 28%;
+				float: right;
+				margin-right: 99px;
+				display: inline-block;
+			}
 		}
+	}
 
-		.training--workshop2--react {
-			color: #FFFFFF;
-			font-size: 1.6em;
-			font-weight: 400;
-			padding: 7px 2px;
-			letter-spacing: 0.6px;
-			margin-bottom: 5px;
-			margin-top: 22px;
-			text-align: initial;
-			line-height: 15px;
-		}
+	.training--workshop2--date a {
+		color: $blue-green;
+		font-size: 0.8em;
+    	font-weight: 300;
+    	letter-spacing: 1.9px;
+    	text-decoration: none;
+   		padding-bottom: 4px;
+    	border-bottom: 2px solid $blue-green;
+	}
 
-		.training--workshop2--authors {
-			font-weight: 300;
-    		font-size: 0.95em;
-    		padding-right: 29px;
-    		letter-spacing: 0.6px;
-    		color: $blue-green;
+	.training--workshop2--react {
+		color: #FFFFFF;
+		font-size: 1.6em;
+		font-weight: 400;
+		padding: 7px 2px;
+		letter-spacing: 0.6px;
+		margin-bottom: 5px;
+		margin-top: 22px;
+		text-align: initial;
+		line-height: 15px;
+		@media #{$medium-screen} {
+			font-size: 1.4em;
+			font-weight: 600;
 		}
+	}
+
+	.training--workshop2--authors {
+		font-weight: 300;
+    	font-size: 0.95em;
+    	padding-right: 29px;
+    	letter-spacing: 0.6px;
+    	color: $blue-green;
+    	@media #{$medium-screen} {
+    		font-size: 0.7em;
+    	}
+	}
 
 		.training--workshop2--view {
 			text-align: center;
-      padding-top: 12px;
-      padding-bottom: 20px;
-      padding-left: 2px;
+      		padding-top: 12px;
+      		padding-bottom: 20px;
+      		padding-left: 2px;
 
       a {
         font-size: 14px;
@@ -174,6 +213,11 @@
         border: none;
         text-align: initial;
         float: left;
+        @media #{$medium-screen} {
+        	background: none;
+        	border: solid 2px #FFFFFF;
+        	padding: 13px 14px;
+        }
 
       }
         &:after {
@@ -181,6 +225,12 @@
           display: block;
           clear: both;
         }
+      i {
+      	@media #{$medium-screen} {
+      		color: $blue-green;
+      		padding-left: 5px;
+      	}
+      }
     }
   }
 
@@ -197,6 +247,10 @@
     font-size: 0.9em;
     padding-left: 0;
     padding-right: 0;
+    @media #{$medium-screen} {
+    	padding-top: 0;
+    	margin-top: 0;
+    }
 
 
     p {
@@ -207,6 +261,13 @@
     .training-wrapper {
       background-color: $overcast-blue;
     }
+	}
+
+	.newsletter {
+		@media #{$medium-screen} {
+			padding-top: 0;
+			padding-bottom: 75px;
+		}
 	}
 
 	.training--newsletter {
@@ -235,6 +296,10 @@
 	      line-height: 0px;
 	      margin-top: -5px;
 	      text-align: center;
+	      @media #{$medium-screen} {
+	      	display: inline;
+	      	line-height: 4.9em;
+	      }
 	    }
 
 	    #mce-EMAIL {

@@ -4,6 +4,7 @@ import { Link }   from 'react-router';
 import Newsletter from 'components/common/newsletter';
 import Button     from 'components/common/button';
 import Tagline    from 'components/common/tagline';
+import D3         from 'components/pages/training/assets/d3.png';
 
 export default function Training() {
   return (
@@ -31,7 +32,7 @@ function Workshop1() {
           <div className="master--react--redux"><span>Webpack</span></div>
           <p className="training--workshop--authors">With Freddy Rangel & Craig Condon</p>
           <div className="training--view">
-            <Button url="/training/react-2016">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
+            <Button url="/training/react-2016">Learn More <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
           </div>
         </div>
       </div>
@@ -41,9 +42,10 @@ function Workshop1() {
 
 function Workshop2() {
   return (
-    <div className="training--workshop2 columns">
+    <div className="training--workshop2 row">
       <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
         <div className="training--workshop2--container">
+          <img src={ D3 } alt="D3 Logo"/>
           <div className="training--workshop2--date">
             <Link to="/training/react-and-d3">Sun, May 8 at 9:00 am, San Francisco</Link>
           </div>
@@ -60,7 +62,7 @@ function Workshop2() {
 
 function Corporate() {
   return (
-    <div className="training--corporate columns">
+    <div className="training--corporate row">
       <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
         <p>We also offer corporate training.</p>
         <p>Contact <a href="mailto:hello@reactuniversity.com">hello@reactuniversity.com</a></p>
