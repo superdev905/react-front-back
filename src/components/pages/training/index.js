@@ -5,6 +5,7 @@ import Newsletter from 'components/common/newsletter';
 import Button     from 'components/common/button';
 import Tagline    from 'components/common/tagline';
 
+
 export default function Training() {
   return (
     <div className="training">

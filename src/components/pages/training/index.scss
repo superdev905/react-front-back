@@ -8,15 +8,31 @@
     text-align: center;
     padding: 0px;
     @media #{$medium-screen} {
-      height: 348px;
+      height: 318px;
       background-color: $white;
     }
 
     .training-wrapper {
       background-color: $blue-green;
       @media #{$medium-screen} {
-        height: 348px;
+        height: 318px;
+        border-radius: 9px;
+        text-align: left;
+        width: 844px;
+        background-image: url('assets/react-2016-banner.svg');
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 111%;
+        padding-left: 62px;
+        width: 66%;
       }
+ 
+    }
+
+    .training--workshop1 columns {
+    	@media #{medium-screen} {
+    		height: 318px;
+    	}
     }
 
     .training--workshop1--container {
@@ -95,7 +111,8 @@
     .training-wrapper {
       background-color: $sky-blue;
       @media #{$medium-screen} {
-        height: 348px;
+        height: 316px;
+        border-radius: 9px;
       }
     }
 
