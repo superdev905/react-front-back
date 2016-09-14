@@ -133,7 +133,7 @@
 		img {
 			height: 146px;
 			padding-top: 36px;
-			padding-left: 46px;
+			padding-left: 36px;
 		}
 	}
 
@@ -147,16 +147,21 @@
 	}
 
 	.overview--bio--left--wrapper {
-		height: 200px;
+		height: 185px;
 		width: 180px;
 		display: inline-block;
-		padding-left: 37px;
+		padding-left: 28px;
 		
 		.overview--bio--left {
 			padding-top: 21px;
-			padding-left: 7px;
 			position: absolute;
 			width: 150px;
+		}
+
+		i {
+			float: left;
+			padding-right: 4px;
+			color: $blue-green;
 		}
 
 		h3 {
@@ -173,14 +178,21 @@
 	}
 
 	.overview--bio--right--wrapper {
-		height: 200px;
+		height: 185px;
 		width: 173px;
 		display: inline-block;
-		padding-left: 37px;
+		padding-left: 19px;
 		position: absolute;
 		
 		.overview--bio--right {
 			padding-top: 20px;
+
+		i {
+			float: left;
+			padding-right: 5px;
+			color: $blue-green;
+		}
+
 		}
 
 		h3 {
@@ -199,13 +211,46 @@
 
 .syllabus {
 	.syllabus--title {
-		padding-left: 30px;
-		
+		padding-left: 33px;
+
 		h2 {
 			font-size: 1.4rem;
     		font-family: rokkitt;
     		font-weight: 800;
     		color: $blue-green;
+    		padding-top: 11px;
+    		letter-spacing: 2px;
+		}
+	}
+
+	.syllabus--list {
+		padding-left: 31px;
+		font-size: 1em;
+		letter-spacing: 1.3px;
+
+		ul {
+			list-style: circle;
+			line-height: 29px;
+		}
+
+		p {
+			letter-spacing: 2.3px;
+			color: orange;
+			padding-left: 2px;
+			padding-top: 21px;
+			margin-bottom: 4px;
+		}
+
+		.list--redux {
+			padding-top: 13px;
+		}
+
+		.list--immutable {
+			padding-top: 13px;
+		}
+		
+		.list--webpack {
+			padding-top: 13px;
 		}
 	}
 }

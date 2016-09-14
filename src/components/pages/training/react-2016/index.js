@@ -13,6 +13,7 @@ export default function React2016() {
   	<Course />
   	<Overview />
   	<Syllabus />
+  	<Requirements />
   	<Newsletter />
   	</div>
   );
@@ -59,13 +60,15 @@ function Overview() {
 			</div>
 			<div className="overview--bio--left--wrapper">
 				<div className="overview--bio--left">
-					<h3>Craig Condon</h3>
+					<a className="twitter--craig" href="https://twitter.com/craigjcondon">
+  					<i className="fa fa-twitter"></i></a><h3>Craig Condon</h3>
 					<p>Creator of Mesh.js, Paperclip.js, & Mojo.js.</p>
 				</div>
 			</div>
 			<div className="overview--bio--right--wrapper">
 				<div className="overview--bio--right">
-					<h3>Freddy Rangel</h3>
+					<a className="twitter--freddy" href="https://twitter.com/frangel85">
+  					<i className="fa fa-twitter"></i></a><h3>Freddy Rangel</h3>
 					<p>Contributor to React and author of "React Under the Hood" & "React 2016".</p>
 				</div>
 			</div>
@@ -79,7 +82,7 @@ function Syllabus() {
 			<div className="syllabus--title">
 				<h2>Syllabus</h2>
 			</div>
-			<div className="syllabus-list">
+			<div className="syllabus--list">
 				<p>- React</p>
 				<ul>
 					<li>What is React?</li>
@@ -92,25 +95,32 @@ function Syllabus() {
 					<li>3 Flavors of React Components</li>
 					<li>JSX Gotchas</li>
 				</ul>
-				<p>- Redux</p>
+				<p className="list--redux">- Redux</p>
 				<ul>
 					<li>What is Redux?</li>
 					<li>Redux Principles</li>
 					<li>Actions and Reduces and Stores, Oh My!</li>
 					<li>Async and Middleware</li>
 				</ul>
-				<p>- ImmutableJS</p>
+				<p className="list--immutable">- ImmutableJS</p>
 				<ul>
 					<li>The Case for Immutability</li>
 					<li>Map, List, fromJS(), is()</li>
 				</ul>
-					<p>- Webpack</p>
+				<p className="list--webpack">- Webpack</p>
 				<ul>
 					<li>What is Webpack?</li>
 					<li>How is Webpack different?</li>
 					<li>What does an effective Webpack config look like?</li>
 				</ul>
 			</div>
+		</div>
+	)
+}
+
+function Requirements() {
+	return (
+		<div className="requirements">
 		</div>
 	)
 }
