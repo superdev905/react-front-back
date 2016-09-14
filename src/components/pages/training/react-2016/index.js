@@ -3,6 +3,8 @@ import React from 'react';
 import { Link }   from 'react-router';
 import Button     from 'components/common/button';
 import Newsletter from 'components/common/newsletter';
+import Craig 	  from './assets/craig.png';
+import Freddy	  from './assets/freddy.png';
 
 
 export default function React2016() {
@@ -47,6 +49,24 @@ function Overview() {
 				<p>Get on the cutting edge of front-end engineering with this immersive full-day, in-person workshop on React, Redux, React Router, Immutable and Webpack brought to you by the author of "React Under the Hood" and the upcoming book "React: The Good Parts". Learn the important aspects of React's API and real-world lessons for facilitating the interactions of these independent libraries.</p>
 				<p>Spending a full day on hands-on instruction is light-years more effective than reading a tutorial or watching a video. Immmediately apply the lessons you learn here in your career. Combining examples, walkthroughs and practical exercises, "React 2016" reinforces valuable lessons to make you the subject matter expert in everything React.</p>
 				<p>Instead of creating a standard (and boring!) "Todo" app, we'll nerd out by building a Star Trek game with a near perfect representation of the Alpha Quadrant.</p>
+			</div>
+			<div className="overview--photo--left">
+				<img src={ Craig } alt="Craig Condon" />
+			</div>
+			<div className="overview--photo--right">
+				<img src={ Freddy } alt="Freddy Rangel" />
+			</div>
+			<div className="overview--bio--left--wrapper">
+				<div className="overview--bio--left">
+					<h3>Craig Condon</h3>
+					<p>Creator of Mesh.js, Paperclip.js, & Mojo.js.</p>
+				</div>
+			</div>
+			<div className="overview--bio--right--wrapper">
+				<div className="overview--bio--right">
+					<h3>Freddy Rangel</h3>
+					<p>Contributor to React and author of "React Under the Hood" & "React 2016".</p>
+				</div>
 			</div>
 		</div>
 	)
