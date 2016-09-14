@@ -210,6 +210,9 @@
 }
 
 .syllabus {
+	padding-bottom: 36px;
+    border-bottom: solid 2px gray;
+	
 	.syllabus--title {
 		padding-left: 33px;
 
@@ -231,6 +234,7 @@
 		ul {
 			list-style: circle;
 			line-height: 29px;
+			color: #65657A;
 		}
 
 		p {
@@ -251,6 +255,50 @@
 		
 		.list--webpack {
 			padding-top: 13px;
+		}
+	}
+}
+
+.requirements {
+
+	.requirements--photo {
+		text-align: center;
+		padding-top: 52px;
+
+		img {
+			height: 147px;
+		}
+	}
+
+	.requirements--info {
+		padding-left: 33px;
+		padding-top: 18px;
+
+		h2 {
+			font-size: 1.4rem;
+    		font-family: rokkitt;
+    		font-weight: 800;
+    		color: $blue-green;
+    		padding-top: 11px;
+    		letter-spacing: 2px;
+		}
+
+		ol {
+			padding-top: 16px;
+			letter-spacing: 1px;
+			line-height: 28px;
+			color: #65657A;
+		}
+	}
+
+	.requirements--payment {
+		padding-top: 48px;
+		text-align: center;
+		padding-bottom: 14px;
+
+		img {
+			height: 190px;
+			width: 320px;
 		}
 	}
 }

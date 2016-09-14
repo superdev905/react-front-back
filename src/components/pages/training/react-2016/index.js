@@ -5,6 +5,8 @@ import Button     from 'components/common/button';
 import Newsletter from 'components/common/newsletter';
 import Craig 	  from './assets/craig.png';
 import Freddy	  from './assets/freddy.png';
+import Requirement from './assets/mobile.png';
+import Payment    from './assets/payment.png';
 
 
 export default function React2016() {
@@ -121,6 +123,20 @@ function Syllabus() {
 function Requirements() {
 	return (
 		<div className="requirements">
+			<div className="requirements--photo">
+			<img src={ Requirement } alt="Phone and Screen"/>
+			</div>
+			<div className="requirements--info">
+				<h2>Requirements</h2>
+				<ol>
+					<li>Intermediate JavaScript including ES2016</li>
+					<li>No previous knowledge of any of these libraries</li>
+					<li>Git and latest version of Node and NPM</li>
+				</ol>
+			</div>
+			<div className="requirements--payment">
+				<img src={ Payment } alt="Payment box"/>
+			</div>
 		</div>
 	)
 }
