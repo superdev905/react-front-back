@@ -12,6 +12,7 @@ export default function React2016() {
   	<div className="course">
   	<Course />
   	<Overview />
+  	<Syllabus />
   	<Newsletter />
   	</div>
   );
@@ -67,6 +68,48 @@ function Overview() {
 					<h3>Freddy Rangel</h3>
 					<p>Contributor to React and author of "React Under the Hood" & "React 2016".</p>
 				</div>
+			</div>
+		</div>
+	)
+}
+
+function Syllabus() {
+	return (
+		<div className="syllabus">
+			<div className="syllabus--title">
+				<h2>Syllabus</h2>
+			</div>
+			<div className="syllabus-list">
+				<p>- React</p>
+				<ul>
+					<li>What is React?</li>
+					<li>How is React Different?</li>
+					<li>Write Components, Not Templates</li>
+					<li>The Virtual DOM</li>
+					<li>Data in React</li>
+					<li>The Diff Algorithm</li>
+					<li>Event Delegation</li>
+					<li>3 Flavors of React Components</li>
+					<li>JSX Gotchas</li>
+				</ul>
+				<p>- Redux</p>
+				<ul>
+					<li>What is Redux?</li>
+					<li>Redux Principles</li>
+					<li>Actions and Reduces and Stores, Oh My!</li>
+					<li>Async and Middleware</li>
+				</ul>
+				<p>- ImmutableJS</p>
+				<ul>
+					<li>The Case for Immutability</li>
+					<li>Map, List, fromJS(), is()</li>
+				</ul>
+					<p>- Webpack</p>
+				<ul>
+					<li>What is Webpack?</li>
+					<li>How is Webpack different?</li>
+					<li>What does an effective Webpack config look like?</li>
+				</ul>
 			</div>
 		</div>
 	)
