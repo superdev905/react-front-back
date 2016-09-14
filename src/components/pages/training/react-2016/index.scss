@@ -1,0 +1,129 @@
+@import 'variables';
+
+.course {
+  .course--workshop1 {
+    height: 341px;
+    background-color: $blue-green;
+    color: #4BD0E2;
+    text-align: center;
+    padding: 0px;
+    @media #{$medium-screen} {
+      height: 318px;
+      background-color: $white;
+    }
+
+    .course-wrapper {
+      background-color: $blue-green;
+      @media #{$large-screen} {
+        height: 318px;
+        text-align: left;
+        padding-left: 42px;
+      }
+ 
+    }
+
+    .course--container {
+      display: inline-block;
+      margin: 0 auto;
+      padding-top: 16px;
+      @media #{$medium-screen} {
+      	max-width: 500px;
+      }
+    }
+		.course--description {
+			padding-top: 36px;
+
+			a {
+		        color: #4BD0E2;
+		        font-size: 0.8em;
+		        font-weight: 300;
+		        letter-spacing: 1.9px;
+		        text-decoration: none;
+		        padding-bottom: 4px;
+		        border-bottom: 2px solid #4BD0E2;
+			}
+		}
+		
+		.master--react--redux--1 {
+			color: #FFFFFF;
+			font-size: 1.6em;
+			font-weight: 600;
+			padding: 8px 2px;
+			letter-spacing: 0.2px;
+			margin-bottom: 5px;
+			margin-top: 22px;
+			text-align: initial;
+			line-height: 9px;
+			@media #{$medium-screen} {
+				font-size: 1.4em;
+    			font-weight: 600;
+    			display: inline-block;
+			}
+			
+		}
+
+		.master--react--redux {
+			color: #FFFFFF;
+			font-size: 1.6em;
+			font-weight: 600;
+			padding: 8px 2px;
+			letter-spacing: 0.7px;
+			margin-bottom: 5px;
+			text-align: initial;
+			line-height: 7px;
+			@media #{$medium-screen} {
+				font-size: 1.4em;
+    			font-weight: 600;
+    			display: inline;
+			}
+
+		}
+
+		p {
+			font-weight: 300;
+    		padding-top: 17px;
+    		font-size: 0.95em;
+    		padding-right: 28px;
+    		letter-spacing: 0.6px;
+    		@media #{$medium-screen} {
+    			font-size: 0.7em;
+    		}
+		}
+
+		.course--view {
+			text-align: left;
+      		padding-top: 23px;
+      		padding-bottom: 49px;
+      		padding-left: 2px;
+      		@media #{$medium-screen} {
+      			padding-left: 0;
+      			padding-top: 29px;
+      		}
+
+			i {
+				padding-left: 5px;
+			}
+		}
+	}
+}
+
+.overview {
+	.overview--title {
+		padding: 77px 0 0 34px;
+
+		h2 {
+			font-size: 1.3rem;
+    		font-family: rokkitt-regular;
+    		color: $blue-green;
+    		font-weight: 600;
+    		letter-spacing: 2.2px;
+		}
+	}
+
+	.overview--copy {
+		padding: 19px 32px;
+	    font-size: 1.1em;
+   		line-height: 54px;
+   		color: #65657A;
+	}
+}
