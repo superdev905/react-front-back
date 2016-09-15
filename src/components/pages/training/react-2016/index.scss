@@ -9,15 +9,21 @@
     padding: 0px;
     @media #{$medium-screen} {
       height: 318px;
+      margin: 0;
+      max-width: 100%;
       background-color: $white;
     }
 
     .course-wrapper {
       background-color: $blue-green;
-      @media #{$large-screen} {
-        height: 318px;
+      @media #{$medium-screen} {
+        height: 398px;
         text-align: left;
         padding-left: 42px;
+        background-image: url('assets/react-2016-header-no-stars.svg');
+        background-position-y: -52px;
+   	 	background-position-x: -129px;
+    	background-size: 123%;
       }
  
     }
@@ -28,7 +34,11 @@
       padding-top: 16px;
       @media #{$medium-screen} {
       	max-width: 500px;
+      	text-align: left;
+      	padding-left: 67px;
+      	padding-top: 98px;
       }
+
     }
 		.course--description {
 			padding-top: 36px;
@@ -86,7 +96,8 @@
     		padding-right: 28px;
     		letter-spacing: 0.6px;
     		@media #{$medium-screen} {
-    			font-size: 0.7em;
+    			font-size: 0.9em;
+    			padding-top: 2px;
     		}
 		}
 
@@ -97,7 +108,7 @@
       		padding-left: 2px;
       		@media #{$medium-screen} {
       			padding-left: 0;
-      			padding-top: 29px;
+      			padding-top: 27px;
       		}
 
 			i {

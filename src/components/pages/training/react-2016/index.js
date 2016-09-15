@@ -5,7 +5,7 @@ import Button     from 'components/common/button';
 import Newsletter from 'components/common/newsletter';
 import Craig 	  from './assets/craig.png';
 import Freddy	  from './assets/freddy.png';
-import Requirement from './assets/mobile.png';
+import Requirement from './assets/mobile.svg';
 import Payment    from './assets/payment.png';
 
 
@@ -24,7 +24,7 @@ export default function React2016() {
 function Course() {
 	return (
 		<div className="course--workshop1 row">
-      		<div className="course-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
+      		<div className="course-wrapper medium-12 medium-offset-0 large-12 large-offset-0 columns">
 				<div className="course--container">
 					<div className="course--description">
 		            	<Link to="/training/react-2016">Sat, April 23 at 9:00 am, San Francisco</Link>
@@ -45,7 +45,7 @@ function Course() {
 
 function Overview() {
 	return (
-		<div className="overview">
+		<div className="overview medium-8 medium-offset-2 large-10 large-offset-1 columns">
 			<div className="overview--title">
 				<h2>Workshop Overview</h2>
 			</div>
@@ -80,7 +80,7 @@ function Overview() {
 
 function Syllabus() {
 	return (
-		<div className="syllabus">
+		<div className="syllabus medium-8 medium-offset-2 large-10 large-offset-1 columns">
 			<div className="syllabus--title">
 				<h2>Syllabus</h2>
 			</div>
@@ -122,7 +122,7 @@ function Syllabus() {
 
 function Requirements() {
 	return (
-		<div className="requirements">
+		<div className="requirements medium-8 medium-offset-2 large-10 large-offset-1 columns">
 			<div className="requirements--photo">
 			<img src={ Requirement } alt="Phone and Screen"/>
 			</div>
