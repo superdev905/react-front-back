@@ -4,6 +4,8 @@ import { getPostFileNames } from 'utils';
 import { startCase }        from 'lodash';
 import { Link }             from 'react-router';
 import Tagline              from 'components/common/tagline';
+import Newsletter from 'components/common/newsletter';
+
 
 export default function Posts() {
   const posts = generatePostListings();
@@ -15,6 +17,7 @@ export default function Posts() {
           { posts }
         </div>
       </div>
+      <Newsletter />
     </div>
   )
 }
