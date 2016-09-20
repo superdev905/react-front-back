@@ -14,6 +14,10 @@
     font-weight: 600;
     letter-spacing: 0.6px;
     text-align: center;
+    @media #{$medium-screen} {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   }
   p {
     line-height: 26px;

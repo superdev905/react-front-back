@@ -1,6 +1,8 @@
 import './index.scss';
 import React   from 'react';
 import Tagline from 'components/common/tagline';
+import Newsletter from 'components/common/newsletter';
+
 
 export default function About() {
   return (
@@ -36,6 +38,7 @@ export default function About() {
         </div>
        </div>
       </div>
+      <Newsletter />
     </div>
   );
 }
