@@ -15,6 +15,10 @@
     .training-wrapper {
       background-color: $blue-green;
       height: 100%;
+      @media #{$medium-screen} {
+    	text-align: initial;
+    	padding-left: 43px;
+      }
       @media #{$large-screen} {
         height: 318px;
         text-align: left;
