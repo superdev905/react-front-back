@@ -53,16 +53,16 @@ function Overview() {
 				<p>Instead of creating a standard (and boring!) "Todo" app, we'll nerd out by building a Star Trek game with a near perfect representation of the Alpha Quadrant.</p>
 			</div>
 			<div className="overview--photo--left">
-				<img src={ Swizec } alt="Craig Condon" />
+				<img src={ Swizec } alt="Swizec Teller" />
 			</div>
 			<div className="overview--photo--right">
 				<img src={ Freddy } alt="Freddy Rangel" />
 			</div>
 			<div className="overview--bio--left--wrapper">
 				<div className="overview--bio--left">
-					<a className="twitter--craig" href="https://twitter.com/craigjcondon">
-  					<i className="fa fa-twitter"></i></a><h3>Craig Condon</h3>
-					<p>Creator of Mesh.js, Paperclip.js, & Mojo.js.</p>
+					<a className="twitter--swizec" href="https://twitter.com/Swizec">
+  					<i className="fa fa-twitter"></i></a><h3>Swizec Teller</h3>
+					<p>Author of "Data Visualizations with d3.js" and "React+d3.js"</p>
 				</div>
 			</div>
 			<div className="overview--bio--right--wrapper">
