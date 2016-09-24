@@ -14,12 +14,13 @@
 
     .training-wrapper {
       background-color: $blue-green;
+      height: 100%;
       @media #{$large-screen} {
         height: 318px;
         text-align: left;
         padding-left: 42px;
 
-	  
+
         &:before {
           content: " ";
           position: absolute;
@@ -123,12 +124,12 @@
 		height: 242px;
 		background-color: $sky-blue;
 		text-align: center;
-    	padding: 37px 0 0 0;
-    	@media #{$medium-screen} {
-      		padding-top: 0px;
-      		height: 3px;
-      		background-color: $white;
-    	}
+    padding: 37px 0 0 0;
+    @media #{$medium-screen} {
+      padding-top: 0px;
+      height: 3px;
+      background-color: $white;
+    }
 
     .training-wrapper {
       background-color: $sky-blue;
@@ -138,19 +139,19 @@
       }
     }
 
-	.training--workshop2--container {
-		display: inline-block;
-		margin: 0 auto;
-		@media #{$medium-screen} {
-		text-align: left;
-		float: left;
-		padding-top: 46px;
-		padding-left: 30px;
-		}
+  .training--workshop2--container {
+    display: inline-block;
+    margin: 0 auto;
+    @media #{$medium-screen} {
+      text-align: left;
+      float: left;
+      padding-top: 46px;
+      padding-left: 30px;
+    }
 
 		img {
 			display: none;
-			@media #{$medium-screen} {
+			@media #{$large-screen} {
 				width: 28%;
 				float: right;
 				margin-right: 99px;
