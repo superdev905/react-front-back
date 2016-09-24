@@ -24,6 +24,7 @@
         height: 550px;
         width: calc(100vw);
         background: url(./assets/react-2016-banner.svg) no-repeat center/10%;
+        transform: translateY(22px);
         background-size: 150%;
         background-position: center top;
       }
@@ -35,6 +36,7 @@
         left: 35%;
         height: 549px;
         width: calc(100vw - 26%);
+        transform: translateY(23px);
         background: url(./assets/react-2016-banner.svg) no-repeat center/10%;
         background-size: 190%;
         background-position: center top;
