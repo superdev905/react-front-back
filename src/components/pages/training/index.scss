@@ -20,16 +20,16 @@
     	padding-left: 43px;
       }
       @media #{$large-screen} {
-        height: 318px;
+        height: 347px;
         text-align: left;
-        padding-left: 42px;
+        padding-left: 100px;
 
 
         &:before {
           content: " ";
           position: absolute;
           width: 844px;
-          height: 318px;
+          height: 347px;
           background-image: url('assets/react-2016-banner.svg');
           background-position: left top;
           background-repeat: no-repeat;
@@ -37,6 +37,13 @@
           width: 66%;
           transform: translateX(59px);
         }
+      }
+
+      @media #{$x-large-screen} {
+      	&:before {
+      		background-size: 1400px;
+      		transform: translateX(-140px);
+      	}
       }
  
     }
@@ -141,6 +148,9 @@
         height: 316px;
         background: linear-gradient(to right, rgba(75,208,226,1) 0%, rgba(8,4,4,1) 100%);
       }
+      @media #{$large-screen} {
+      	height: 349px;
+      }
     }
 
   .training--workshop2--container {
@@ -152,6 +162,9 @@
       padding-top: 46px;
       padding-left: 30px;
     }
+    @media #{$large-screen} {
+    	padding-left: 80px;
+    }
 
 		img {
 			display: none;
@@ -160,6 +173,7 @@
 				float: right;
 				margin-right: 99px;
 				display: inline-block;
+				transform: translateX(117px) scale(1.5);
 			}
 		}
 	}

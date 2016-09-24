@@ -21,7 +21,7 @@ export default function Training() {
 function Workshop1() {
 	return (
 		<div className="training--workshop1 row">
-      <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
+      <div className="training-wrapper medium-10 medium-offset-1 large-10 large-offset-1 columns">
         <div className="training--workshop1--container">
           <div className="training--workshop1--date">
             <Link to="/training/react-2016">Sat, April 23 at 9:00 am, San Francisco</Link>
@@ -43,7 +43,7 @@ function Workshop1() {
 function Workshop2() {
   return (
     <div className="training--workshop2 row">
-      <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
+      <div className="training-wrapper medium-10 medium-offset-1 large-10 large-offset-1 columns">
         <div className="training--workshop2--container">
           <img src={ D3 } alt="D3 Logo"/>
           <div className="training--workshop2--date">
@@ -63,7 +63,7 @@ function Workshop2() {
 function Corporate() {
   return (
     <div className="training--corporate row">
-      <div className="training-wrapper medium-10 medium-offset-1 large-8 large-offset-2 columns">
+      <div className="training-wrapper medium-10 medium-offset-1 large-10 large-offset-1 columns">
         <p>We also offer corporate training. </p>
         <p>Contact <a href="mailto:hello@reactuniversity.com">hello@reactuniversity.com </a></p>
         <p>for more information.</p>
