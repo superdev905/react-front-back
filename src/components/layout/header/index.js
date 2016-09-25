@@ -24,7 +24,7 @@ export default function Header() {
 function BurgerMenu() {
   const styles = {
     bmMenuWrap: {
-      zIndex: '3'
+      zIndex: '9999'
     },
     bmOverlay: {
       height: 'calc(100% + 35px)'
