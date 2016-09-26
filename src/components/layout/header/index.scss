@@ -19,11 +19,12 @@
 
   .app-header--name {
     font-size: 19px;
+    font-family: $poppins;
     display: inline;
     vertical-align: top;
     margin: 3px 0 0 3px;
     font-weight: bold;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.5px;
   }
 
   a {
@@ -90,7 +91,7 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
-  transform: translate(-10px, -45px);
+  transform: translate(-243px, -5px);
 }
 
 /* Color/shape of close button cross */

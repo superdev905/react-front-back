@@ -52,7 +52,7 @@ function Cta() {
   return (
     <div className="home--cta">
       <div className="home--cta--view-courses">
-        <Button url="/training">View Courses <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
+        <Button url="/workshops">View Workshops <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
       </div>
       <div className="home--cta--copy">
         <p>Accelerate your career by learning from the experts. Master everything you need to <span className="blue-text">build modern JavaScript applications</span> using React, Redux, Webpack, WebSockets, WebRTC, Node and more.</p>

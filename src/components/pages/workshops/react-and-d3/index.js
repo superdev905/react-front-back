@@ -28,12 +28,12 @@ function Course() {
         <div className="course--container medium-10 offset-2 large-10 offset-2">
           <img src={ D3 } alt="D3 Logo"/>
           <div className="course--date">
-            <Link to="/training/react-and-d3">Sun, May 8 at 9:00 am, San Francisco</Link>
+            <Link to="/workshops/react-and-d3">Sun, May 8 at 9:00 am, San Francisco</Link>
           </div>
           <div className="course--react"><span>React and D3</span></div>
           <p className="course--authors">With Swizec Teller & Freddy Rangel</p>
           <div className="course--view">
-            <Button url="/training/react-and-d3">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
+            <Button url="/workshops/react-and-d3">View Course <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Button>
           </div>
         </div>
       </div>

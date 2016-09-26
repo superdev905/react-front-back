@@ -1,0 +1,408 @@
+@import 'variables';
+
+.course {
+  .course--workshop1 {
+    height: 341px;
+    background-color: $blue-green;
+    color: #4BD0E2;
+    text-align: center;
+    padding: 0px;
+    @media #{$medium-screen} {
+      height: 318px;
+      margin: 0;
+      max-width: 100%;
+      background-color: $white;
+    }
+
+    .course-wrapper {
+      background-color: $blue-green;
+      @media #{$medium-screen} {
+        height: 398px;
+        text-align: left;
+        padding-left: 140px;
+        background-image: url('assets/react-2016-header-no-stars.svg');
+        background-position-y: -52px;
+        background-position-x: -74px;
+        background-size: 123%;
+      }
+    }
+    .course--container {
+      display: inline-block;
+      margin: 0 auto;
+      padding-top: 16px;
+      @media #{$medium-screen} {
+        max-width: 500px;
+        text-align: left;
+        padding-left: 67px;
+        padding-top: 98px;
+      }
+    }
+    .course--description {
+      padding-top: 36px;
+
+      a {
+        color: #4BD0E2;
+        font-size: 0.8em;
+        font-weight: 300;
+        letter-spacing: 1.9px;
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #4BD0E2;
+      }
+    }
+
+    .master--react--redux--1 {
+      color: #FFFFFF;
+      font-size: 1.6em;
+      font-weight: 600;
+      padding: 8px 2px;
+      letter-spacing: 0.2px;
+      margin-bottom: 5px;
+      margin-top: 22px;
+      text-align: initial;
+      line-height: 9px;
+      @media #{$medium-screen} {
+        font-size: 1.4em;
+        font-weight: 600;
+        display: inline-block;
+      }
+    }
+
+    .master--react--redux {
+      color: #FFFFFF;
+      font-size: 1.6em;
+      font-weight: 600;
+      padding: 8px 2px;
+      letter-spacing: 0.7px;
+      margin-bottom: 5px;
+      text-align: initial;
+      line-height: 7px;
+      @media #{$medium-screen} {
+        font-size: 1.4em;
+        font-weight: 600;
+        display: inline;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      padding-top: 17px;
+      font-size: 0.95em;
+      padding-right: 28px;
+      letter-spacing: 0.6px;
+      @media #{$medium-screen} {
+        font-size: 0.9em;
+        padding-top: 2px;
+      }
+    }
+    .course--view {
+      text-align: left;
+      padding-top: 23px;
+      padding-bottom: 49px;
+      padding-left: 2px;
+      @media #{$medium-screen} {
+        padding-left: 0;
+        padding-top: 27px;
+      }
+      i {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.overview {
+
+  .overview--title {
+    text-align: initial;
+    padding: 55px 0 0 34px;
+    @media #{$medium-screen} {
+      padding: 42px 0 0 86px;
+      width: 400px;
+    }
+    h2 {
+      font-size: 1.1em;
+      font-family: $poppins;
+      color: $blue-green;
+      font-weight: 600;
+      letter-spacing: 1.7px;
+      text-align: initial;
+
+    }
+  }
+
+  .overview--copy {
+    padding: 19px 32px;
+    font-size: 1.1em;
+    line-height: 54px;
+    color: #65657A;
+    @media #{$large-screen} {
+      padding: 22px 89px;
+      font-size: 1.1em;
+      line-height: 54px;
+      max-width: 72%;
+      position: relative;
+    }
+  }
+
+  .overview--left {
+    text-align: center;
+    @media #{$medium-screen} {
+      position: absolute;
+      margin-left: 707px;
+      margin-top: 292px;
+    }
+
+    img {
+      height: 154px;
+      padding-top: 36px;
+      @media #{$medium-screen} {
+        height: 185px;
+      }
+    }
+    p {
+      @media #{$medium-screen} {
+        line-height: 2.3px;
+      }
+    }
+    i {
+      padding-right: 4px;
+      color: $blue-green;
+    }
+    h3 {
+      display: inline;
+      font-size: 0.99em;
+      font-weight: 500;
+      color: $green;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 0.9em;
+      color: #65657A;
+    }
+    .overview--bio--left {
+      padding-top: 21px;
+      position: absolute;
+      width: 150px;
+      @media #{$medium-screen} {
+        padding-top: 493px;
+        position: absolute;
+        width: 150px;
+      }
+    }
+  }
+
+  .overview--right {
+    text-align: center;
+    @media #{$medium-screen} {
+      position: absolute;
+      padding-left: 53%;
+    }
+
+    img {
+      height: 154px;
+      padding-top: 37px;
+      @media #{$medium-screen} {
+        height: 185px;
+      }
+    }
+		.overview--right--bio {
+			padding-top: 20px;
+			@media #{$medium-screen} {
+				padding-top: 10px;
+				width: 171px;
+				position: absolute;
+				clear: both;
+			}
+
+      i {
+        padding-right: 5px;
+        color: $blue-green;
+      }
+
+      h3 {
+        display: inline;
+        font-size: 0.99em;
+        font-weight: 500;
+        color: $green;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 0.9em;
+        color: #65657A;
+      }
+		}
+  }
+
+	.overview--bio--left--wrapper {
+		height: 185px;
+		width: 180px;
+		display: inline-block;
+		padding-left: 28px;
+		@media #{$medium-screen} {
+			padding-left: 0;
+		}
+  }
+
+	.overview--bio--right--wrapper {
+		height: 185px;
+		width: 173px;
+		display: inline-block;
+		padding-left: 19px;
+		position: absolute;
+		@media #{$medium-screen} {
+			margin: 743px;
+			margin-top: 0;
+			height: 185px;
+			width: 210px;
+			display: block;
+			padding-left: 0;
+		}
+	}
+}
+
+.syllabus {
+  padding-top: 50px;
+  padding-bottom: 36px;
+  &:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    border-bottom: solid 1px gray;
+    max-width: 300px;
+    padding-top: 30px;
+  }
+
+  @media #{$medium-screen} {
+    padding-left: 71px;
+    font-size: 0.9em;
+  }
+
+  .syllabus--container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+	.syllabus--title {
+		padding-left: 33px;
+		@media #{$medium-screen} {
+			padding-top: 41px;
+		}
+
+		h2 {
+			font-size: 1.4rem;
+    		font-family: rokkitt;
+    		font-weight: 800;
+    		color: $blue-green;
+    		padding-top: 11px;
+    		letter-spacing: 2px;
+		}
+	}
+
+	.syllabus--list {
+		padding-left: 31px;
+		font-size: 1em;
+		letter-spacing: 1.3px;
+
+		ul {
+			list-style: circle;
+			line-height: 29px;
+			color: #65657A;
+		}
+
+		p {
+			letter-spacing: 2.3px;
+			color: orange;
+			padding-left: 2px;
+			padding-top: 21px;
+			margin-bottom: 4px;
+		}
+
+		.list--redux {
+			padding-top: 13px;
+		}
+
+		.list--immutable {
+			padding-top: 13px;
+		}
+		
+		.list--webpack {
+			padding-top: 13px;
+		}
+	}
+}
+
+.requirements { 
+	.requirements--photo {
+		text-align: center;
+    padding-top: 0px;
+		@media #{$medium-screen} {
+			padding-right: 362px;
+			display: inline;
+			padding-top: 35px;
+		}
+
+		img {
+			height: 147px;
+			@media #{$medium-screen} {
+				height: 186px;
+			}
+		}
+	}
+
+	.requirements--info {
+    max-width: 450px;
+    margin: 0 auto;
+		padding-left: 33px;
+		padding-top: 18px;
+		@medai #{$medium-screen} {
+			padding-left: 0px;
+			padding-top: 25px;
+		}
+
+		h2 {
+			font-size: 1.4rem;
+    		font-family: rokkitt;
+    		font-weight: 800;
+    		color: $blue-green;
+    		padding-top: 11px;
+    		letter-spacing: 2px;
+    		@media #{$medium-screen} {
+    			padding-left: 95px;
+    			font-size: 1.3em;
+    			letter-spacing: 0px;
+    		}
+		}
+
+		ol {
+			padding-top: 16px;
+			letter-spacing: 1px;
+			line-height: 28px;
+			color: #65657A;
+			@media #{$medium-screen} {
+				font-size: 0.9em;
+				padding-left: 95px;
+			}
+		}
+	}
+
+	.requirements--payment {
+    display: none;
+		padding-top: 48px;
+		text-align: center;
+		padding-bottom: 14px;
+		@media #{$medium-screen} {
+			padding-top: 101px;
+			padding-bottom: 118px;
+		}
+
+		img {
+			height: 190px;
+			width: 320px;
+			@media #{$medium-screen} {
+				height: 231px;
+				width: 572px;
+			}
+		}
+	}
+}
