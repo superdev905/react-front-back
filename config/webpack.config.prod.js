@@ -23,9 +23,9 @@ module.exports = {
   ],
   output: {
     path: paths.appBuild,
-    filename: 'static/js/[name].[chunkhash:8].js',
-    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
-    publicPath: publicPath
+    filename: '[name].[chunkhash:8].js',
+    chunkFilename: '[name].[chunkhash:8].chunk.js',
+    publicPath: '/static/'
   },
   resolve: {
     extensions: ['', '.js', '.json'],
@@ -78,7 +78,7 @@ module.exports = {
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'file',
         query: {
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: '[name].[hash:8].[ext]'
         }
       },
       {
@@ -87,7 +87,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: 'media/[name].[hash:8].[ext]'
         }
       }
     ]

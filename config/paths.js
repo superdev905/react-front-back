@@ -2,6 +2,7 @@
 // and use those instead. This way we don't need to branch here.
 
 var path = require('path');
+var isProd = process.env.NODE_ENV === 'production';
 
 // True after ejecting, false when used as a dependency
 var isEjected = (
@@ -44,6 +45,19 @@ if (isInCreateReactAppSource) {
     appNodeModules: resolveApp('node_modules'),
     // this is empty with npm3 but node resolution searches higher anyway:
     ownNodeModules: resolveOwn('../node_modules')
+  };
+
+} else if (isProd){
+  module.exports = {
+    appBuild: resolveApp('static'),
+    appHtml: resolveApp('index.html'),
+    appFavicon: resolveApp('favicon.ico'),
+    appPackageJson: resolveApp('package.json'),
+    appSrc: resolveApp('src'),
+    appNodeModules: resolveApp('node_modules'),
+    ownNodeModules: resolveApp('node_modules'),
+    sassPath: resolveApp('src/scss'),
+    bittersPath: resolveApp('src/scss/base/base')
   };
 } else {
   // after eject: we're in ./config/
