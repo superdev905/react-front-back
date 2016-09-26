@@ -1,9 +1,11 @@
-var path = require('path');
-var autoprefixer = require('autoprefixer');
-var webpack = require('webpack');
+var path              = require('path');
+var autoprefixer      = require('autoprefixer');
+var webpack           = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var url = require('url');
-var paths = require('./paths');
+var url               = require('url');
+var paths             = require('./paths');
+var bourbonPaths      = require('node-bourbon').includePaths;
+var neatPaths         = require('bourbon-neat').includePaths;
 
 var homepagePath = require(paths.appPackageJson).homepage;
 var publicPath = homepagePath ? url.parse(homepagePath).pathname : '/';
@@ -27,6 +29,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.json'],
+    modulesDirectories: [paths.ownNodeModules, paths.appSrc],
     alias: {
       // This `alias` section can be safely removed after ejection.
       // We do this because `babel-runtime` may be inside `react-scripts`,
@@ -42,6 +45,9 @@ module.exports = {
   resolveLoader: {
     root: paths.ownNodeModules,
     moduleTemplates: ['*-loader']
+  },
+  sassLoader: {
+    includePaths: [paths.sassPath, paths.appNodeModules, bourbonPaths, neatPaths],
   },
   module: {
     preLoaders: [
@@ -59,12 +65,8 @@ module.exports = {
         query: require('./babel.prod')
       },
       {
-        test: /\.css$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        // Disable autoprefixer in css-loader itself:
-        // https://github.com/webpack/css-loader/issues/281
-        // We already have it thanks to postcss.
-        loaders: ['style', 'css?-autoprefixer', 'postcss', 'sass']
+        test: /css$/,
+        loaders: ['style', 'css', 'sass']
       },
       {
         test: /\.json$/,
